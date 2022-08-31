@@ -5,15 +5,25 @@ using UnityEngine;
 public class SpawnerPlatform : MonoBehaviour
 {
     [SerializeField] private BasePlatform[] _platforms;
-    private void Start()
+    BasePlatform _lastPlatform;
+    private void FixedUpdate()
+    {
+        SpawnPlatform();
+    }
+
+    void SpawnPlatform()
     {
         Vector3 spawnPostion = new Vector3();
-        for (int i = 0; i < 10; i++)
+        spawnPostion.x = Random.Range(-2, 2);
+        spawnPostion.y = Random.Range(0.5f, 2.5f) ;
+        if (_lastPlatform != null)
+            spawnPostion.y += _lastPlatform.transform.position.y;
+        else
         {
-            spawnPostion.x = Random.Range(-2, 2);
-            if (i != 0) spawnPostion.y += Random.Range(0.5f, 2.5f);
-            else spawnPostion.y = -1.5f;
-            Instantiate(_platforms[Random.Range(0, _platforms.Length)], spawnPostion, Quaternion.identity);
+            spawnPostion.y = -3.5f;
+            spawnPostion.x = 0;
         }
+
+        _lastPlatform = Instantiate(_platforms[Random.Range(0, _platforms.Length)], spawnPostion, Quaternion.identity);
     }
 }
