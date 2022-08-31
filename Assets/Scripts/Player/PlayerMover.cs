@@ -21,13 +21,15 @@ public class PlayerMover : MonoBehaviour
     private void FixedUpdate()
     {
 #if UNITY_ANDROID_API
-        MoveHorizontal();
+        _horizontalDirectory = Input.acceleration.x;
 #endif
+#if UNITY_EDITOR
+        _horizontalDirectory = Input.GetAxis("Horizontal");
+#endif
+        MoveHorizontal();
     }
-
     private void MoveHorizontal()
     {
-        _horizontalDirectory = Input.acceleration.x;
         if (_horizontalDirectory < 0)
             _playerSprite.flipX = true;
         else if (_horizontalDirectory > 0)
