@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 5682967538358220650}
   - component: {fileID: 5682967538358220649}
   - component: {fileID: 5682967538358220651}
+  - component: {fileID: 1485004236}
   m_Layer: 5
   m_Name: Cell Fon
   m_TagString: Untagged
@@ -871,9 +872,21 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
-  m_ChildScaleWidth: 1
+  m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1485004236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5682967538358220647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14429ad74c4499641b75f87ce81c0a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5682967538597552168
 GameObject:
   m_ObjectHideFlags: 0
