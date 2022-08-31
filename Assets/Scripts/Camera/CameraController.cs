@@ -16,7 +16,5 @@ public class CameraController : MonoBehaviour
             Vector3 currentPostionCamera = Vector3.MoveTowards(transform.position, _player.transform.position, 1f);
             transform.position = new Vector3(transform.position.x, currentPostionCamera.y, transform.position.z);
         }
-        else
-            print("stop");
     }
 }
