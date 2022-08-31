@@ -5,10 +5,19 @@ using UnityEngine;
 public class SpawnerPlatform : MonoBehaviour
 {
     [SerializeField] private BasePlatform[] _platforms;
+    [SerializeField] private Transform _topBound;
     BasePlatform _lastPlatform;
     private void FixedUpdate()
     {
-        SpawnPlatform();
+        if (_lastPlatform == null)
+        {
+            SpawnPlatform();
+        }
+        else if (_lastPlatform.transform.position.y < _topBound.position.y)
+        {
+            SpawnPlatform();
+        }
+        
     }
 
     void SpawnPlatform()
