@@ -12,9 +12,7 @@ public class SimplePlatform : BasePlatform
         if (collision.gameObject.TryGetComponent(out Player player))
         {
             float offset = collision.transform.position.y - transform.position.y;
-            print(offset);
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            print("jump");
             Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
