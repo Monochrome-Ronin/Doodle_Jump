@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimplePlatform : BasePlatform
+public class WeakPlatform : Environments
 {
-    [SerializeField] private float _jumpForce = 6.5f;
+    [SerializeField] Animator _animator;
+
     private float _contactOffsetY = .69f;
 
     protected override void OnCollisionEnter2D(Collision2D collision)
@@ -13,10 +14,8 @@ public class SimplePlatform : BasePlatform
         {
             float offset = collision.transform.position.y - transform.position.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
-            rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-            player.GetComponent<PlayerMover>().JumpAnim();
+            _animator.SetTrigger("Jump");
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }
