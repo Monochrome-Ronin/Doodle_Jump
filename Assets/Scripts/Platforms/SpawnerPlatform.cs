@@ -43,7 +43,15 @@ public class SpawnerPlatform : MonoBehaviour
         {
             Instantiate(_coin,
                 new Vector3(_lastPlatform.transform.position.x + Random.Range(-1, 1),
-                    _lastPlatform.transform.position.y + Random.Range(-2.5f, 2.5f), 0), _coin.transform.rotation, transform);
+                    _lastPlatform.transform.position.y + Random.Range(1f, 2.5f), 0), _coin.transform.rotation, transform);
+            if (_coin.transform.position.x < -3f)
+            {
+                _coin.transform.position = new Vector3(-2.5f, _coin.transform.position.y, 0);
+            }
+            else if (_coin.transform.position.x > 3f)
+            {
+                _coin.transform.position = new Vector3(2.5f, _coin.transform.position.y, 0);
+            }
             
         }
     }

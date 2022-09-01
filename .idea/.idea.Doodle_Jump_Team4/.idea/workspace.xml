@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="Destroy platforms and fixed infinity spawn">
+    <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platforms/SpawnerPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platforms/SpawnerPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Texturers/UI/Missions.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Texturers/UI/Missions.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,16 @@
       <workItem from="1661938812847" duration="59000" />
       <workItem from="1661939433961" duration="77000" />
       <workItem from="1661939550988" duration="11104000" />
+      <workItem from="1662028097998" duration="1777000" />
     </task>
+    <task id="LOCAL-00001" summary="Add coin, spawn coin, collect coin">
+      <created>1661958798331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661958798331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add coin, spawn coin, collect coin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add coin, spawn coin, collect coin" />
   </component>
 </project>
