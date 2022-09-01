@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnerPlatform : MonoBehaviour
 {
     [SerializeField] private BasePlatform[] _platforms;
     [SerializeField] private Transform _topBound;
+    [SerializeField] private GameObject _coin;
     BasePlatform _lastPlatform;
     private void FixedUpdate()
     {
@@ -34,5 +36,24 @@ public class SpawnerPlatform : MonoBehaviour
         }
 
         _lastPlatform = Instantiate(_platforms[Random.Range(0, _platforms.Length)], spawnPostion, Quaternion.identity);
+        
+        int _randomNumber = Random.Range(0, 10);
+        Debug.Log(_randomNumber);
+        if (_randomNumber > 6)
+        {
+            Instantiate(_coin,
+                new Vector3(_lastPlatform.transform.position.x + Random.Range(-1, 1),
+                    _lastPlatform.transform.position.y + Random.Range(1f, 2.5f), 0), _coin.transform.rotation, transform);
+            if (_coin.transform.position.x < -3f)
+            {
+                _coin.transform.position = new Vector3(-2.5f, _coin.transform.position.y, 0);
+            }
+            else if (_coin.transform.position.x > 3f)
+            {
+                _coin.transform.position = new Vector3(2.5f, _coin.transform.position.y, 0);
+            }
+            
+        }
     }
+    
 }
