@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
         
     }
 
-    void SpawnPlatform()
+    private void SpawnPlatform()
     {
         Vector3 spawnPostion = new Vector3();
         spawnPostion.x = Random.Range(-2, 2);
@@ -40,16 +40,16 @@ public class Spawner : MonoBehaviour
         int _randomNumber = Random.Range(0, 10);
         if (_randomNumber > 6)
         {
-            Instantiate(_coin,
+            GameObject coin = Instantiate(_coin,
                 new Vector3(_lastPlatform.transform.position.x + Random.Range(-1, 1),
                     _lastPlatform.transform.position.y + Random.Range(1f, 2.5f), 0), _coin.transform.rotation, transform);
-            if (_coin.transform.position.x < -3f)
+            if (coin.transform.position.x < -2.5f)
             {
-                _coin.transform.position = new Vector3(-2.5f, _coin.transform.position.y, 0);
+                coin.transform.position = new Vector3(-2.5f, _coin.transform.position.y, 0);
             }
-            else if (_coin.transform.position.x > 3f)
+            else if (_coin.transform.position.x > 2.5f)
             {
-                _coin.transform.position = new Vector3(2.5f, _coin.transform.position.y, 0);
+                coin.transform.position = new Vector3(2.5f, _coin.transform.position.y, 0);
             }
             
         }
