@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnerPlatform : MonoBehaviour
 {
     [SerializeField] private BasePlatform[] _platforms;
+    [SerializeField] private int[] _chanceOfPlatrofm;
     [SerializeField] private Transform _topBound;
     [SerializeField] private GameObject _coin;
     BasePlatform _lastPlatform;
@@ -35,8 +36,13 @@ public class SpawnerPlatform : MonoBehaviour
             spawnPostion.x = 0;
         }
 
-        _lastPlatform = Instantiate(_platforms[Random.Range(0, _platforms.Length)], spawnPostion, Quaternion.identity);
+        _lastPlatform = Instantiate(RandomPlatform(), spawnPostion, Quaternion.identity);
         
+        
+    }
+
+    void SpawnCoin()
+    {
         int _randomNumber = Random.Range(0, 10);
         if (_randomNumber > 6)
         {
@@ -51,8 +57,24 @@ public class SpawnerPlatform : MonoBehaviour
             {
                 _coin.transform.position = new Vector3(2.5f, _coin.transform.position.y, 0);
             }
-            
+
         }
     }
-    
+
+    BasePlatform RandomPlatform()
+    {
+        int maxValue = 0;
+        int currentPlatform = 0;
+        int[] randomArr = new int[_platforms.Length];
+        for (int i = 0; i < _platforms.Length; i++)
+        {
+            randomArr[i] = Random.Range(0, _chanceOfPlatrofm[i] + 1);
+            if (maxValue < randomArr[i])
+            {
+                maxValue = randomArr[i];
+                currentPlatform = i;
+            }
+        }
+        return _platforms[currentPlatform];
+    }
 }
