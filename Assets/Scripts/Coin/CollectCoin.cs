@@ -18,7 +18,6 @@ public class CollectCoin : MonoBehaviour
         {
             Destroy(gameObject);
             _coin ++;
-            Debug.Log(_coin);
         }
     }
 }
