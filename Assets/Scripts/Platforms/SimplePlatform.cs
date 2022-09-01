@@ -16,6 +16,7 @@ public class SimplePlatform : BasePlatform
             Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
             rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+            player.GetComponent<PlayerMover>().JumpAnim();
         }
     }
 }
