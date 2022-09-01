@@ -38,7 +38,6 @@ public class SpawnerPlatform : MonoBehaviour
         _lastPlatform = Instantiate(_platforms[Random.Range(0, _platforms.Length)], spawnPostion, Quaternion.identity);
         
         int _randomNumber = Random.Range(0, 10);
-        Debug.Log(_randomNumber);
         if (_randomNumber > 6)
         {
             Instantiate(_coin,
