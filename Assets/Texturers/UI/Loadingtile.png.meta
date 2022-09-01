@@ -138,7 +138,7 @@ TextureImporter:
         width: 640
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,11 +155,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 645
-        y: 329
+        y: 334
         width: 158
-        height: 181
+        height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,10 +177,10 @@ TextureImporter:
         serializedVersion: 2
         x: 808
         y: 466
-        width: 62
+        width: 57
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +201,7 @@ TextureImporter:
         width: 52
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +222,7 @@ TextureImporter:
         width: 642
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,7 +243,7 @@ TextureImporter:
         width: 56
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +264,7 @@ TextureImporter:
         width: 54
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,7 +285,7 @@ TextureImporter:
         width: 142
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,11 +302,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 796
-        y: 258
-        width: 55
-        height: 48
+        y: 259
+        width: 54
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: Loadingtile_13
       rect:
         serializedVersion: 2
-        x: 894
+        x: 899
         y: 261
-        width: 58
-        height: 45
+        width: 52
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,7 +348,7 @@ TextureImporter:
         width: 640
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,78 +361,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Loadingtile_18
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 97
-        width: 35
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 783dcdd22ada23549803de9c50c3d788
-      internalID: -569967175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_19
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 100
-        width: 16
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e791cec63ff1114fb30f2814868c131
-      internalID: -394574753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_20
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 104
-        width: 36
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf080df081f89334299ab4d106427f85
-      internalID: -1746686658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Loadingtile_21
       rect:
         serializedVersion: 2
-        x: 460
+        x: 461
         y: 87
-        width: 59
+        width: 57
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -453,7 +390,7 @@ TextureImporter:
         width: 72
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,12 +406,12 @@ TextureImporter:
       name: Loadingtile_24
       rect:
         serializedVersion: 2
-        x: 797
-        y: 159
-        width: 55
-        height: 45
+        x: 798
+        y: 160
+        width: 53
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,12 +427,12 @@ TextureImporter:
       name: Loadingtile_25
       rect:
         serializedVersion: 2
-        x: 894
-        y: 160
-        width: 57
-        height: 44
+        x: 899
+        y: 161
+        width: 52
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,153 +440,6 @@ TextureImporter:
       bones: []
       spriteID: 85b2e4cafe9d7564a88ba321dace47a3
       internalID: -1847804672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_27
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 119
-        width: 42
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d290cf888aa36b94cbe8287246f05a63
-      internalID: 2108257145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_30
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 82
-        width: 34
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e2bef8498d6df046844bbe83cd836c1
-      internalID: 1902516065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_31
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 84
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceaa7c6d1266ffc4998d5dbb9f0d88d5
-      internalID: 522180697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_32
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 90
-        width: 37
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 453e9148a125a31419ea86fd1cf23774
-      internalID: -833903830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_33
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 104
-        width: 38
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 758a578aee64c8f4eac0e4cc773eb6e5
-      internalID: -2008313772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_34
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 88
-        width: 24
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bd0ba11725772740925754684cdc2f5
-      internalID: 1241172995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loadingtile_35
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 115
-        width: 35
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25ecd330a14d9e448b4c342db0ef9c46
-      internalID: -207342813
       vertices: []
       indices: 
       edges: []
@@ -663,7 +453,7 @@ TextureImporter:
         width: 159
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -684,7 +474,7 @@ TextureImporter:
         width: 114
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -705,7 +495,7 @@ TextureImporter:
         width: 46
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -726,7 +516,7 @@ TextureImporter:
         width: 50
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,7 +537,7 @@ TextureImporter:
         width: 51
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -765,10 +555,10 @@ TextureImporter:
         serializedVersion: 2
         x: 164
         y: 4
-        width: 76
-        height: 38
+        width: 72
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -786,10 +576,10 @@ TextureImporter:
         serializedVersion: 2
         x: 242
         y: 4
-        width: 58
+        width: 56
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -805,12 +595,12 @@ TextureImporter:
       name: Loadingtile_46
       rect:
         serializedVersion: 2
-        x: 302
+        x: 305
         y: 3
-        width: 46
+        width: 41
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -829,9 +619,9 @@ TextureImporter:
         x: 974
         y: 461
         width: 38
-        height: 42
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -852,7 +642,7 @@ TextureImporter:
         width: 402
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
