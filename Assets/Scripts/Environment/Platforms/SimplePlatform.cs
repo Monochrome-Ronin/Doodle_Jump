@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimplePlatform : BasePlatform
+public class SimplePlatform : Environments
 {
     [SerializeField] private float _jumpForce = 6.5f;
     private float _contactOffsetY = .69f;

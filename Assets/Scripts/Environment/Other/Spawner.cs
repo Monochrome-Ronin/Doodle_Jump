@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SpawnerPlatform : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-    [SerializeField] private BasePlatform[] _platforms;
+    [SerializeField] private Environments[] _platforms;
     [SerializeField] private Transform _topBound;
     [SerializeField] private GameObject _coin;
-    BasePlatform _lastPlatform;
+    Environments _lastPlatform;
     private void FixedUpdate()
     {
         if (_lastPlatform == null)
