@@ -18,7 +18,8 @@ public class Score : MonoBehaviour
         if (score > _score)
         {
             _score = score;
-            if (_score > Saver.GetIntPrefs("Score")) Saver.SaverIntPrefs("Score", _score);
+            Saver.SaverIntPrefs("LastScore", _score);
+            if (_score > Saver.GetIntPrefs("HighScore")) Saver.SaverIntPrefs("HighScore", _score);
             _scoreText.text = _score.ToString();
         }
     }
