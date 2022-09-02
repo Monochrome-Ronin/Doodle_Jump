@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_49__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Merge_at_01_09_2022_15_50__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Merge_at_01_09_2022_15_50__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2022_15_47__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2022_15_47__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell Fon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell Fon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameSceneLeveles.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameSceneLeveles.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Coin/CollectCoin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Coin/CollectCoin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Other/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Other/Spawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
