@@ -15,6 +15,7 @@ public class Saver : MonoBehaviour
     private void Start()
     {
         if (!PlayerPrefs.HasKey("Coins")) SaverIntPrefs("Coins", 0);
-        if (!PlayerPrefs.HasKey("Score")) SaverIntPrefs("Score", 0);
+        if (!PlayerPrefs.HasKey("HighScore")) SaverIntPrefs("HighScore", 0);
+        if (!PlayerPrefs.HasKey("LastScore")) SaverIntPrefs("Coins", 0);
     }
 }

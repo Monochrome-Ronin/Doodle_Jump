@@ -6,7 +6,6 @@ using UnityEngine;
 public class CollectCoin : Environments
 {
     private AudioSource _audioCoin;
-
     private void Awake()
     {
         _audioCoin = GetComponent<AudioSource>();
