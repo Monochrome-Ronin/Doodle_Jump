@@ -1357,11 +1357,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378b65214db44ad46b08bc3e59d10248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chanceOfEnviroments: 0a0000000000000005000000
+  _chanceOfEnviroments: 0a000000010000000200000002000000
   _environments:
   - {fileID: 1715599308192991909, guid: bb779d63a54c3ee4cadfbc61eb8b1e0f, type: 3}
   - {fileID: 5709208542972098120, guid: 6d0c92b06c02fc447a395323ee48e5b0, type: 3}
-  - {fileID: 7440459074892105638, guid: cb8359a21ae04c948b8390aa4c8bbbfa, type: 3}
+  - {fileID: 6020889928555981930, guid: 792eda8c4659f714e9e7b159ff4f0aff, type: 3}
+  - {fileID: -4362939290772147632, guid: cebc02917c8ed81498afc028a6a3c341, type: 3}
   _topBound: {fileID: 359134070}
   _lastPlatform: {fileID: 610304113}
 --- !u!1 &1127552399
@@ -1935,7 +1936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4515443418164607702, guid: daf99d14becd56e4bbe5e2bc26a0c57e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -51.06001
+      value: -51.06006
       objectReference: {fileID: 0}
     - target: {fileID: 4515443418164607702, guid: daf99d14becd56e4bbe5e2bc26a0c57e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

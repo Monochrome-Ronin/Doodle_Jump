@@ -5,6 +5,7 @@ using UnityEngine;
 public class WeakPlatform : Environments
 {
     [SerializeField] Animator _animator;
+    [SerializeField] private AudioClip _clipBreak;
 
     private float _contactOffsetY = .69f;
 
@@ -15,6 +16,7 @@ public class WeakPlatform : Environments
             float offset = collision.transform.position.y - transform.position.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
             _animator.SetTrigger("Jump");
+            AudioController.Instance.PlaySound(_clipBreak); 
             DisableCollider();
             Invoke("EnebleCollider", .5f);
         }
