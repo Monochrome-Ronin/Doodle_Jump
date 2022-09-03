@@ -2553,7 +2553,7 @@ TextureImporter:
         width: 120
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2574,7 +2574,7 @@ TextureImporter:
         width: 112
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2595,7 +2595,7 @@ TextureImporter:
         width: 114
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2603,6 +2603,111 @@ TextureImporter:
       bones: []
       spriteID: 9fb305cf81e3e6f4ab4521e5b2cea61a
       internalID: 1897978732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurstPlatform1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 626
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defdeb9d12fc2b24bab165b60ef4b385
+      internalID: -1160430681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurstPlatform2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 590
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cac0870483d5ee4babf0c538acc664e
+      internalID: 731017206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurstPlatform3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 553
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edcb56c4da5fd74b9b8dc62e4b9d73b
+      internalID: -435677908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurstPlatform4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 517
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb070a4150721c4409285b608b2a8c51
+      internalID: -1461708306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurstPlatform5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 481
+        width: 114
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501106cff1c371243858e8c02141468a
+      internalID: 1209341587
       vertices: []
       indices: 
       edges: []
@@ -2639,11 +2744,12 @@ TextureImporter:
       Gametiles_123: -283663908
       Gametiles_100: 148193008
       Gametiles_89: -972229290
+      BurstPlatform1: -1160430681
       Gametiles_85: -1779122139
-      Gametiles_26: -1685616018
       Gametiles_55: 695066059
-      Gametiles_118: 551749626
       Gametiles_60: -849550034
+      Gametiles_118: 551749626
+      BurstPlatform4: 1546757286
       Gametiles_125: -1990649919
       Gametiles_69: -710775431
       Gametiles_10: -1200492019
@@ -2657,7 +2763,6 @@ TextureImporter:
       Gametiles_38: -353655831
       Gametiles_107: -1493015281
       Gametiles_104: -419470488
-      Gametiles_32: 1329741697
       Gametiles_49: -37843442
       Gametiles_25: -1673354658
       Gametiles_78: 54733328
@@ -2702,11 +2807,11 @@ TextureImporter:
       Gametiles_52: -1072202553
       Gametiles_102: -1506016262
       Gametiles_35: 1093434394
-      Gametiles_31: 1546757286
       Gametiles_12: 802913992
       Gametiles_115: 1002243413
       Gametiles_79: -781243147
       Gametiles_82: 1900314506
+      BurstPlatform5: 1329741697
       Gametiles_42: -153839440
       Gametiles_29: 2012429785
       Gametiles_81: -2077658699
@@ -2717,7 +2822,6 @@ TextureImporter:
       Gametiles_21: -971122692
       Gametiles_19: 644552127
       Gametiles_124: 1535697584
-      Gametiles_24: 698384506
       Gametiles_27: 1074211749
       Gametiles_47: 2026042521
       Gametiles_13: 2125212772
@@ -2731,6 +2835,7 @@ TextureImporter:
       Gametiles_110: -497391021
       Gametiles_126: 1468980864
       Gametiles_117: 1625710067
+      BurstPlatform2: 698384506
       Gametiles_62: 181759442
       Gametiles_61: 302364854
       Gametiles_88: 1467530500
@@ -2740,6 +2845,7 @@ TextureImporter:
       Gametiles_119: -1373264049
       Gametiles_16: 736864638
       Gametiles_92: 620424469
+      BurstPlatform3: -1685616018
       Gametiles_84: -1336400062
       Gametiles_5: 516412769
       Gametiles_11: -1046165695
