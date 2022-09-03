@@ -1,0 +1,102 @@
+Index: Assets/Scripts/Player/PlayerMover.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections;\r\nusing System.Collections.Generic;\r\nusing UnityEngine;\r\n\r\n[RequireComponent(typeof(Rigidbody2D))]\r\npublic class PlayerMover : MonoBehaviour\r\n{\r\n    [SerializeField] private SpriteRenderer _playerSprite;\r\n    [SerializeField] private float _speed = 7.5f;\r\n    private Rigidbody2D _rigidbody2D;\r\n    private float _horizontalDirectory;\r\n    private void Start()\r\n    {\r\n        _rigidbody2D = GetComponent<Rigidbody2D>();\r\n    }\r\n    private void Update()\r\n    {\r\n        ControllHorizontalPostion();\r\n\r\n    }\r\n    private void FixedUpdate()\r\n    {\r\n#if UNITY_ANDROID_API\r\n        _horizontalDirectory = Input.acceleration.x;\r\n#endif\r\n#if UNITY_EDITOR\r\n        _horizontalDirectory = Input.GetAxis(\"Horizontal\");\r\n#endif\r\n        MoveHorizontal();\r\n    }\r\n    private void MoveHorizontal()\r\n    {\r\n        if (_horizontalDirectory < 0)\r\n            _playerSprite.flipX = true;\r\n        else if (_horizontalDirectory > 0)\r\n            _playerSprite.flipX = false;\r\n        _rigidbody2D.velocity = new Vector2(_horizontalDirectory * _speed, _rigidbody2D.velocity.y);\r\n    }\r\n\r\n    private void ControllHorizontalPostion()\r\n    {\r\n        if (transform.position.x < -3) transform.position = new Vector2(2.7f, transform.position.y);\r\n        else if (transform.position.x > 3) transform.position = new Vector2(-2.7f, transform.position.y);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Player/PlayerMover.cs b/Assets/Scripts/Player/PlayerMover.cs
+--- a/Assets/Scripts/Player/PlayerMover.cs	(revision 589dec9e1edb8c2d87d6d3eb393259c016f0269e)
++++ b/Assets/Scripts/Player/PlayerMover.cs	(date 1662120770469)
+@@ -1,12 +1,17 @@
+ using System.Collections;
+ using System.Collections.Generic;
+ using UnityEngine;
++using DG.Tweening;
+ 
+ [RequireComponent(typeof(Rigidbody2D))]
+ public class PlayerMover : MonoBehaviour
+ {
+-    [SerializeField] private SpriteRenderer _playerSprite;
++    [SerializeField] bool _isMover = true;
++    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
++    [SerializeField] private Sprite _jumpSprite;
++    [SerializeField] private Sprite _idleSprite;
+     [SerializeField] private float _speed = 7.5f;
++    [SerializeField] private float _jumpAnimTime = .2f;
+     private Rigidbody2D _rigidbody2D;
+     private float _horizontalDirectory;
+     private void Start()
+@@ -20,6 +25,7 @@
+     }
+     private void FixedUpdate()
+     {
++        if (_isMover == false) return;
+ #if UNITY_ANDROID_API
+         _horizontalDirectory = Input.acceleration.x;
+ #endif
+@@ -31,9 +37,9 @@
+     private void MoveHorizontal()
+     {
+         if (_horizontalDirectory < 0)
+-            _playerSprite.flipX = true;
++            _playerSpriteRenderer.flipX = true;
+         else if (_horizontalDirectory > 0)
+-            _playerSprite.flipX = false;
++            _playerSpriteRenderer.flipX = false;
+         _rigidbody2D.velocity = new Vector2(_horizontalDirectory * _speed, _rigidbody2D.velocity.y);
+     }
+ 
+@@ -43,4 +49,14 @@
+         else if (transform.position.x > 3) transform.position = new Vector2(-2.7f, transform.position.y);
+     }
+ 
++    public void JumpAnim()
++    {
++        _playerSpriteRenderer.sprite = _jumpSprite;
++        Invoke("SetSpriteback", _jumpAnimTime);
++    }
++
++    void SetSpriteback()
++    {
++        _playerSpriteRenderer.sprite = _idleSprite;
++    }
+ }
+Index: Assets/Scripts/Platforms/BasePlatform.cs
+===================================================================
+diff --git a/Assets/Scripts/Platforms/BasePlatform.cs b/Assets/Scripts/Platforms/BasePlatform.cs
+deleted file mode 100644
+--- a/Assets/Scripts/Platforms/BasePlatform.cs	(revision 589dec9e1edb8c2d87d6d3eb393259c016f0269e)
++++ /dev/null	(revision 589dec9e1edb8c2d87d6d3eb393259c016f0269e)
+@@ -1,8 +0,0 @@
+-using System.Collections;
+-using System.Collections.Generic;
+-using UnityEngine;
+-
+-public abstract class BasePlatform : MonoBehaviour
+-{
+-    protected abstract void OnCollisionEnter2D(Collision2D collision);
+-}
+Index: Assets/Scripts/Platforms/Destroy.cs
+===================================================================
+diff --git a/Assets/Scripts/Platforms/Destroy.cs b/Assets/Scripts/Platforms/Destroy.cs
+deleted file mode 100644
+--- a/Assets/Scripts/Platforms/Destroy.cs	(revision 589dec9e1edb8c2d87d6d3eb393259c016f0269e)
++++ /dev/null	(revision 589dec9e1edb8c2d87d6d3eb393259c016f0269e)
+@@ -1,16 +0,0 @@
+-using System;
+-using System.Collections;
+-using System.Collections.Generic;
+-using UnityEngine;
+-
+-public class Destroy : MonoBehaviour
+-{
+-    private void OnCollisionEnter2D(Collision2D other)
+-    {
+-        if (other.collider)
+-        {
+-            Destroy(other.gameObject);  
+-        }
+-        
+-    }
+-}

@@ -382,34 +382,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missions_29
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 113
-        width: 21
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63062eb1dc09160478b388499a5a538a
-      internalID: -1015858887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Missions_30
       rect:
         serializedVersion: 2
-        x: 510
-        y: 138
-        width: 10
-        height: 34
+        x: 126
+        y: 77
+        width: 394
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,349 +403,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missions_32
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 90
-        width: 29
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9ba2754ba4a8254ca62cee4df3d0fe6
-      internalID: -1626548516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_33
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 106
-        width: 9
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 619c003a7ea1a9d44a4b7135cd75473e
-      internalID: 328846545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_34
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 146
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c00557e20cbfda4c9713e3c64a568e5
-      internalID: 1953050848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_35
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 124
-        width: 22
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7c781bb11136274c8704e3e43326b53
-      internalID: 1359666272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_36
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 100
-        width: 21
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa170990b68e38a43988a0d3586fae57
-      internalID: 833010618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_37
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 103
-        width: 25
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e5545ad72b9ba544a850744a91d5c7c
-      internalID: 1471915585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_38
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 108
-        width: 36
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c816957e96731ae4eaa9c1263b979a01
-      internalID: -1907369888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_39
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 115
-        width: 7
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2bc21ba1c07aee42ac73992875b923e
-      internalID: 1032933434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_40
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 118
-        width: 28
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ae42529998961f45b702e086d04489a
-      internalID: 1343045791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_41
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 120
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24dbc9456baaaf742a67a22fab8ae412
-      internalID: -1563946628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_42
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 127
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3e613acea67c5a46912a4b0fa82b98d
-      internalID: 2080498710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_43
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 79
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa6b03c8345943841b03d08eceb6d5a2
-      internalID: 2118766912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_44
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 78
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95c6aac22684bd74096e2fb539fae41d
-      internalID: -414697924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_45
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 86
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 546c2351e2587f84d8658b832ec4bdbc
-      internalID: -1157674892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_46
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 73
-        width: 27
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb5862fc10dd8e743b6943847545db9e
-      internalID: 707774258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Missions_47
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 96
-        width: 36
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1792a6e83c928448b3039e9f370947
-      internalID: 964712301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Missions_49
       rect:
         serializedVersion: 2
-        x: 90
-        y: 0
-        width: 205
-        height: 72
+        x: 104
+        y: 8
+        width: 140
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,6 +503,69 @@ TextureImporter:
       bones: []
       spriteID: f454011dd7d83414a828048327f36171
       internalID: -1557145842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missions_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 729
+        width: 532
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f35c28246a1dc4baba65b56335650b
+      internalID: -126132357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missions_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 33
+        width: 138
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86924975fdc8c484a9c77f04079cdb00
+      internalID: 1892823709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missions_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 7
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd32f85870ba940bcd296803470450
+      internalID: 674372681
       vertices: []
       indices: 
       edges: []

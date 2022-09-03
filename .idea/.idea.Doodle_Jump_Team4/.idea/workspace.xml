@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platforms/SpawnerPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platforms/SpawnerPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="VladLavrishko" />
+      </map>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/Destroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Prefabs/Cell Fon.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Environment/Coin/CollectCoin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scripts/Platforms/BasePlatform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeakPlatform : BasePlatform
+public class WeakPlatform : Environments
 {
     [SerializeField] Animator _animator;
 

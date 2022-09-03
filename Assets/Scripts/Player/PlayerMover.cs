@@ -6,6 +6,7 @@ using DG.Tweening;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMover : MonoBehaviour
 {
+    [SerializeField] bool _isMover = true;
     [SerializeField] private SpriteRenderer _playerSpriteRenderer;
     [SerializeField] private Sprite _jumpSprite;
     [SerializeField] private Sprite _idleSprite;
@@ -24,6 +25,7 @@ public class PlayerMover : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (_isMover == false) return;
 #if UNITY_ANDROID_API
         _horizontalDirectory = Input.acceleration.x;
 #endif
