@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-public class Animations : MonoBehaviour
+public class Animations
 {
     public static void DoFade(CanvasGroup image, int fade, float speed = 0.6f)
     {

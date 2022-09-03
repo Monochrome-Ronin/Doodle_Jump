@@ -10,12 +10,10 @@ public class CollectCoin : Environments
     {
         _audioCoin = GetComponent<AudioSource>();
     }
-
     private void Start()
     {
         ClampPosition();
     }
-
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
         if (collider2D.gameObject.CompareTag("Player"))
@@ -25,7 +23,6 @@ public class CollectCoin : Environments
             Destroy(gameObject, 0.1f);
         }
     }
-
     private void ClampPosition()
     {
         if (transform.position.x < -2.5f)
