@@ -37,18 +37,22 @@ public class UIController : MonoBehaviour
 
     private void StartGameEndeless()
     {
+        AudioController.Instance.PlayButtons();
         SceneManager.LoadScene("GameScene");
     }
     private void StartGameLeveles()
     {
+        AudioController.Instance.PlayButtons();
         SceneManager.LoadScene("GameSceneLeveles");
     }
     private void ShopController()
     {
+        AudioController.Instance.PlayButtons();
         ControllRaycastsCanvasGroup(_shopCanvas);
     }
     private void ScoreController()
     {
+        AudioController.Instance.PlayButtons();
         ControllRaycastsCanvasGroup(_scorePanel);
         ControllScorePanel(_scorePanel);
     }

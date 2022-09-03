@@ -20,11 +20,13 @@ public class GameUIController : MonoBehaviour
 
     private void Pause()
     {
+        AudioController.Instance.PlayButtons();
         FonPause.SetActive(true);
         Time.timeScale = 0; 
     }
     private void Resume()
     {
+        AudioController.Instance.PlayButtons();
         FonPause.SetActive(false);
         Time.timeScale = 1;
     }

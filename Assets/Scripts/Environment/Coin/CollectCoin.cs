@@ -5,12 +5,8 @@ using UnityEngine;
 
 public class CollectCoin : Environments
 {
-    private AudioSource _audioCoin;
-    private void Awake()
-    {
-        _audioCoin = GetComponent<AudioSource>();
-    }
-
+   [SerializeField] private AudioClip _clipCoin;
+   
     private void Start()
     {
         ClampPosition();
@@ -20,7 +16,7 @@ public class CollectCoin : Environments
     {
         if (collider2D.gameObject.CompareTag("Player"))
         {
-            _audioCoin.Play();
+            AudioController.Instance.PlaySound(_clipCoin);
             Saver.SaverIntPrefs("Coins", Saver.GetIntPrefs("Coins") + 1);
             Destroy(gameObject, 0.1f);
         }
