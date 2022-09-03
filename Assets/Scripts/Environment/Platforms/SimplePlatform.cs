@@ -20,10 +20,6 @@ public class SimplePlatform : Environments
         rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         player.GetComponent<PlayerMover>().JumpAnim();
     }
-    public void ReflectJump()
-    {
-        _isJump = !_isJump;
-    }
     public void SetJump(bool jump)
     {
         _isJump = jump;

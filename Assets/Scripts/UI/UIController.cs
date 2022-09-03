@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private CanvasGroup _shopCanvas;
     [SerializeField] private CanvasGroup _scorePanel;
     [SerializeField] private Text[] _scoreTXT;
-    [SerializeField] private SimplePlatform[] _simplePlatforms;
+    [SerializeField] private SimplePlatform _simplePlatform;
 
     private void Start()
     {
@@ -50,11 +50,8 @@ public class UIController : MonoBehaviour
     {
         AudioController.Instance.PlayButtons();
         ControllRaycastsCanvasGroup(_shopCanvas);
-        foreach (SimplePlatform simplePlatform in _simplePlatforms)
-        {
-            simplePlatform.SetJump(false);
-        }
-        if (!_shopCanvas.blocksRaycasts) _simplePlatforms[0].SetJump(true);
+        if (!_shopCanvas.blocksRaycasts) _simplePlatform.SetJump(true);
+        else if (_shopCanvas.blocksRaycasts) _simplePlatform.SetJump(false);
     }
     private void ScoreController()
     {
