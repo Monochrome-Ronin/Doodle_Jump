@@ -43,7 +43,7 @@ public class UIController : MonoBehaviour
     private void StartGameLeveles()
     {
         AudioController.Instance.PlayButtons();
-        SceneManager.LoadScene("GameSceneLeveles");
+        SceneManager.LoadScene("GameScene");
     }
     private void ShopController()
     {

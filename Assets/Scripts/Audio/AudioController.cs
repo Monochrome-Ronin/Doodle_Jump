@@ -8,6 +8,24 @@ public class AudioController : MonoBehaviour
     public static AudioController Instance;
     
     [SerializeField] private AudioSource _effectsSource, _buttonsSource;
+    public static void MuteSound()
+    {
+        bool mute = false;
+        if (Saver.GetStringPrefs("MuteSound") == "True") mute = false;
+        else if (Saver.GetStringPrefs("MuteSound") == "False") mute = true;
+        Saver.SaverStringPrefs("MuteSound", mute.ToString());
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        if (Saver.GetStringPrefs("MuteSound") == "True") return;
+        _effectsSource.PlayOneShot(clip);
+    }
+
+    public void PlayButtons()
+    {
+        if (Saver.GetStringPrefs("MuteSound") == "True") return;
+        _buttonsSource.Play();
+    }
     private void Awake()
     {
         if (Instance == null)
@@ -19,21 +37,5 @@ public class AudioController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    public void PlaySound(AudioClip clip)
-    {
-        _effectsSource.PlayOneShot(clip);
-    }
-
-    public void PlayButtons()
-    {
-        _buttonsSource.Play();
-    }
-
-    public void MuteSound()
-    {
-        _effectsSource.mute = !_effectsSource.mute;
-        _buttonsSource.mute = !_buttonsSource.mute;
     }
 }

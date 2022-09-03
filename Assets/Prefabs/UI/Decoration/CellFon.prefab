@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 5682967538358220649}
   - component: {fileID: 5682967538358220651}
   m_Layer: 5
-  m_Name: Cell Fon
+  m_Name: CellFon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 685324642850280352}
   - component: {fileID: 685324642850280354}
   m_Layer: 5
-  m_Name: Platform UI
+  m_Name: PlatformUI
   m_TagString: Platmor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
