@@ -9,6 +9,7 @@ public class Destroy : MonoBehaviour
     {
         if (other.collider)
         {
+            print(other.gameObject.name);
             Destroy(other.gameObject);  
         }
         

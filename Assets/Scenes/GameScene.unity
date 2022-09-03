@@ -472,6 +472,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2954526979236557664, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+      propertyPath: _idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 60338ab05cd835f46b60614f1be07279, type: 3}
+    - target: {fileID: 2954526979236557664, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+      propertyPath: _jumpSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a5fd70ffd1c318c4e881fa27a4c47a74, type: 3}
+    - target: {fileID: 2954526979236557664, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+      propertyPath: _playerSpriteRenderer
+      value: 
+      objectReference: {fileID: 1698296611}
     - target: {fileID: 2954526979236557665, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -892,6 +904,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _platforms:
   - {fileID: 1715599308192991909, guid: bb779d63a54c3ee4cadfbc61eb8b1e0f, type: 3}
+  - {fileID: 5709208542972098120, guid: 6d0c92b06c02fc447a395323ee48e5b0, type: 3}
+  _chanceOfPlatrofm: 0a00000001000000
   _topBound: {fileID: 359134070}
   _coin: {fileID: 3193949150648710048, guid: cb8359a21ae04c948b8390aa4c8bbbfa, type: 3}
 --- !u!1 &1357410619
@@ -1000,6 +1014,11 @@ RectTransform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5682967538358220648, guid: 92eb8afe9ab9bf34bbf4b62babcf1dc5, type: 3}
   m_PrefabInstance: {fileID: 5682967537141787296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1698296611 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2954526978977545325, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+  m_PrefabInstance: {fileID: 502180186}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1976238322
 GameObject:

@@ -27,7 +27,7 @@ public class SpawnerPlatform : MonoBehaviour
     {
         Vector3 spawnPostion = new Vector3();
         spawnPostion.x = Random.Range(-2, 2);
-        spawnPostion.y = Random.Range(0.5f, 2.5f) ;
+        spawnPostion.y = Random.Range(0.5f, 1.3f) ;
         if (_lastPlatform != null)
             spawnPostion.y += _lastPlatform.transform.position.y;
         else
