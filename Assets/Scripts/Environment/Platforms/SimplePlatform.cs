@@ -20,9 +20,13 @@ public class SimplePlatform : Environments
         rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         player.GetComponent<PlayerMover>().JumpAnim();
     }
-    public void SetJump()
+    public void ReflectJump()
     {
         _isJump = !_isJump;
+    }
+    public void SetJump(bool jump)
+    {
+        _isJump = jump;
     }
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
