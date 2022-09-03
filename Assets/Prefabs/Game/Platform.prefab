@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpForce: 8
+  _clipJump: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
 --- !u!61 &1715599308192991906
 BoxCollider2D:
   m_ObjectHideFlags: 0
