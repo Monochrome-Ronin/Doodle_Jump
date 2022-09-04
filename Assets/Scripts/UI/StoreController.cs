@@ -15,4 +15,9 @@ public class StoreController : MonoBehaviour
             if (platform.gameObject.GetInstanceID() == simplePlatform.gameObject.GetInstanceID()) simplePlatform.SetJump(true);
         }
     }
+
+    private void Start()
+    {
+        
+    }
 }

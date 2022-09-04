@@ -13,6 +13,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private CanvasGroup _shopCanvas;
     [SerializeField] private CanvasGroup _scorePanel;
     [SerializeField] private Text[] _scoreTXT;
+    [SerializeField] private Text _coinsTXT;
     [SerializeField] private SimplePlatform _simplePlatform;
 
     private void Start()
@@ -25,6 +26,7 @@ public class UIController : MonoBehaviour
     {
         _scoreTXT[0].text = "high score: " + Saver.GetIntPrefs("HighScore").ToString();
         _scoreTXT[1].text = "last score: " + Saver.GetIntPrefs("LastScore").ToString();
+        _coinsTXT.text = Saver.GetIntPrefs("Coins").ToString();
     }
 
     private void AddButton()
