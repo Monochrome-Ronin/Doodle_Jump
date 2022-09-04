@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 520276960149906769}
   - component: {fileID: 3969526539234487466}
-  - component: {fileID: 7303647571468931474}
-  - component: {fileID: 7440459074892105638}
+  - component: {fileID: -70851978328767200}
+  - component: {fileID: -8094411906510924421}
   m_Layer: 0
-  m_Name: Coin
-  m_TagString: Coin
+  m_Name: Spring
+  m_TagString: Spring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3193949150648710048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.5, y: -1.81, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -195147835, guid: 7244b660b54e1174394f61466e86414e, type: 3}
+  m_Sprite: {fileID: -1821694515, guid: 02b371efe13f1044fb20d992abe20611, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7303647571468931474
-CircleCollider2D:
+--- !u!61 &-70851978328767200
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99,10 +99,20 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.00085031986}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.34, y: 0.22}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.56
---- !u!114 &7440459074892105638
+  m_Size: {x: 0.3434019, y: 0.22510171}
+  m_EdgeRadius: 0
+--- !u!114 &-8094411906510924421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +121,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3193949150648710048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f65d64840ef8bb40b29809d4a80538e, type: 3}
+  m_Script: {fileID: 11500000, guid: 55d5a7047f00387478e75dd1cc2bf80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clipCoin: {fileID: 8300000, guid: 12c09c4d1fb1bde4594b486f5645aa81, type: 3}
+  _clipSpring: {fileID: 8300000, guid: 621e1a1e6e1224f45bc2287278e887ef, type: 3}
+  _jumpForce: 15
+  _activeSpring: {fileID: -1673354658, guid: 02b371efe13f1044fb20d992abe20611, type: 3}

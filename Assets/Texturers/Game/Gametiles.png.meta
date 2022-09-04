@@ -571,13 +571,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gametiles_25
+      name: Spring2
       rect:
         serializedVersion: 2
-        x: 809
-        y: 739
-        width: 33
-        height: 55
+        x: 808
+        y: 740
+        width: 34
+        height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2524,13 +2524,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gametiles_18
+      name: Spring1
       rect:
         serializedVersion: 2
-        x: 807
-        y: 803
-        width: 35
-        height: 23
+        x: 808
+        y: 804
+        width: 34
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2726,7 +2726,7 @@ TextureImporter:
       Gametiles_94: 891216452
       Gametiles_9: 409052052
       Gametiles_121: -1181758384
-      WeakPlatform2: 825008462
+      Gametiles_108: -694258835
       Gametiles_112: -49442572
       Gametiles_44: -1011509081
       Gametiles_109: -536499032
@@ -2757,6 +2757,7 @@ TextureImporter:
       Gametiles_71: -1400952978
       Gametiles_0: -1540104398
       Gametiles_91: -581102918
+      Spring1: -1821694515
       Gametiles_28: -906485003
       Gametiles_80: -318689171
       Gametiles_68: -2055597827
@@ -2764,7 +2765,7 @@ TextureImporter:
       Gametiles_107: -1493015281
       Gametiles_104: -419470488
       Gametiles_49: -37843442
-      Gametiles_25: -1673354658
+      WeakPlatform3: 1694915755
       Gametiles_78: 54733328
       Gametiles_7: 1520339838
       Gametiles_46: -1537139141
@@ -2778,6 +2779,7 @@ TextureImporter:
       Gametiles_103: 76064329
       Gametiles_63: 331615580
       Gametiles_2: -2004917057
+      Spring2: -1673354658
       Gametiles_51: -2144280201
       Gametiles_50: -1681149712
       Gametiles_95: -420764159
@@ -2785,14 +2787,12 @@ TextureImporter:
       Gametiles_54: 921275290
       Gametiles_114: 344906599
       WeakPlatform4: 1897978732
-      WeakPlatform3: 1694915755
       Gametiles_113: -38254417
       Gametiles_8: 1396940501
       Gametiles_57: -1409931019
       Gametiles_40: -688310262
       Gametiles_53: -66946870
       Gametiles_59: 437215497
-      Gametiles_18: -1821694515
       Gametiles_128: 2025570663
       Gametiles_3: 442723750
       Gametiles_48: 2019791779
@@ -2855,7 +2855,7 @@ TextureImporter:
       Gametiles_34: 1302328482
       Gametiles_30: -1261165365
       Gametiles_43: -976454911
-      Gametiles_108: -694258835
+      WeakPlatform2: 825008462
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

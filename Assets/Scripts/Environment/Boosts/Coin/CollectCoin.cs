@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectCoin : Environments
+public class CollectCoin : Boost
 {
    [SerializeField] private AudioClip _clipCoin;
    
@@ -11,7 +11,7 @@ public class CollectCoin : Environments
     {
         ClampPosition();
     }
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    protected override void OnTriggerEnter2D(Collider2D collider2D)
     {
         if (collider2D.gameObject.CompareTag("Player"))
         {
