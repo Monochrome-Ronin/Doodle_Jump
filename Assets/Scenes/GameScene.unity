@@ -1384,6 +1384,11 @@ MonoBehaviour:
   - {fileID: 5709208542972098120, guid: 6d0c92b06c02fc447a395323ee48e5b0, type: 3}
   - {fileID: 6020889928555981930, guid: 792eda8c4659f714e9e7b159ff4f0aff, type: 3}
   - {fileID: -4362939290772147632, guid: cebc02917c8ed81498afc028a6a3c341, type: 3}
+  _chanceOfBoosts: 0100000004000000
+  _boosts:
+  - {fileID: -8094411906510924421, guid: a364c96a6b294c94890c637ab1142bfb, type: 3}
+  - {fileID: 7440459074892105638, guid: cb8359a21ae04c948b8390aa4c8bbbfa, type: 3}
+  _chanceOfSpawnBoost: 2
   _topBound: {fileID: 359134070}
   _lastPlatform: {fileID: 610304113}
 --- !u!224 &1094343976 stripped

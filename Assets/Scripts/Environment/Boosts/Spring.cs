@@ -13,9 +13,7 @@ public class Spring : Boost
         if (collider2D.gameObject.TryGetComponent(out Player player))
         {
             float offset = collider2D.transform.localPosition.y - transform.localPosition.y;
-            print(offset);
             if (player.transform.GetComponent<Rigidbody2D>().velocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            print("GigaJump");
             Jump(player, _jumpForce);
         }
     }

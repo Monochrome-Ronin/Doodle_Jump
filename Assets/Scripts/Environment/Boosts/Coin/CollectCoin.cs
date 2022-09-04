@@ -13,7 +13,7 @@ public class CollectCoin : Boost
     }
     protected override void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (collider2D.gameObject.CompareTag("Player"))
+        if (collider2D.TryGetComponent(out Player player))
         {
             AudioController.Instance.PlaySound(_clipCoin);
             Saver.SaverIntPrefs("Coins", Saver.GetIntPrefs("Coins") + 1);
