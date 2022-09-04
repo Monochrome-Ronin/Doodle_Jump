@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5429672337380723399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5429672337380723398}
+  - component: {fileID: 5429672337380723397}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5429672337380723398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429672337380723399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5429672337380723397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429672337380723399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378b65214db44ad46b08bc3e59d10248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chanceOfEnviroments: 0a000000010000000200000002000000
+  _environments:
+  - {fileID: 1715599308192991909, guid: bb779d63a54c3ee4cadfbc61eb8b1e0f, type: 3}
+  - {fileID: 5709208542972098120, guid: 6d0c92b06c02fc447a395323ee48e5b0, type: 3}
+  - {fileID: 6020889928555981930, guid: 792eda8c4659f714e9e7b159ff4f0aff, type: 3}
+  - {fileID: -4362939290772147632, guid: cebc02917c8ed81498afc028a6a3c341, type: 3}
+  _chanceOfBoosts: 0100000004000000
+  _boosts:
+  - {fileID: -8094411906510924421, guid: a364c96a6b294c94890c637ab1142bfb, type: 3}
+  - {fileID: 7440459074892105638, guid: cb8359a21ae04c948b8390aa4c8bbbfa, type: 3}
+  _chanceOfSpawnBoost: 2
+  _topBound: {fileID: 0}
+  _lastPlatform: {fileID: 0}
