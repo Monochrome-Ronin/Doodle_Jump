@@ -354,7 +354,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6644089084064721620}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -601,6 +601,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1603927050341808234, guid: 327ca53effa3be747accaa0deceb265d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603927050341808234, guid: 327ca53effa3be747accaa0deceb265d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1603927050341808234, guid: 327ca53effa3be747accaa0deceb265d, type: 3}
@@ -2584,7 +2588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5155511234978039842, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -34.053
+      value: -34.05298
       objectReference: {fileID: 0}
     - target: {fileID: 5155511234978039842, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
       propertyPath: m_AnchoredPosition.y

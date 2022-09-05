@@ -3284,10 +3284,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1265967756599928598, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.74816895
-      objectReference: {fileID: 0}
     - target: {fileID: 1362760051861780796, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3551,10 +3547,6 @@ PrefabInstance:
     - target: {fileID: 1362760053421290441, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -3565,33 +3557,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1778786072}
     - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetJump
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: SimplePlatform, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1778786073}
-    - target: {fileID: 1771057591191124561, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -34.05298
-      objectReference: {fileID: 0}
     - target: {fileID: 6644089084064721620, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_Name
       value: Store Canvas
@@ -3678,10 +3646,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644089084064721624, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6644089084064721625, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
-      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6644089084064721627, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
