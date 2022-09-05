@@ -15,6 +15,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private Text[] _scoreTXT;
     [SerializeField] private Text _coinsTXT;
     [SerializeField] private SimplePlatform _simplePlatform;
+    [SerializeField] private StoreController _storeController;
+    [SerializeField] private SkinPlayerManager _skinPlayerManager;
 
     private void Start()
     {
@@ -52,8 +54,16 @@ public class UIController : MonoBehaviour
     {
         AudioController.Instance.PlayButtons();
         ControllRaycastsCanvasGroup(_shopCanvas);
-        if (!_shopCanvas.blocksRaycasts) _simplePlatform.SetJump(true);
-        else if (_shopCanvas.blocksRaycasts) _simplePlatform.SetJump(false);
+        if (!_shopCanvas.blocksRaycasts)
+        {
+            _simplePlatform.SetJump(true);
+            _skinPlayerManager.SetSkin();
+        }
+        else if (_shopCanvas.blocksRaycasts)
+        {
+            _simplePlatform.SetJump(false);
+            _storeController.SetCurrentSkin();
+        }
     }
     private void ScoreController()
     {

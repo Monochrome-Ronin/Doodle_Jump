@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 public class Saver : MonoBehaviour
 {
     private static string _filePathForSkinsId;
-    public static void SaverIntPrefs(string namePrefs, int data)
+    public static void SaveIntPrefs(string namePrefs, int data)
     {
         PlayerPrefs.SetInt(namePrefs, data);
     }
@@ -17,7 +17,7 @@ public class Saver : MonoBehaviour
     {
         return PlayerPrefs.GetInt(namePrefs);
     }
-    public static void SaverStringPrefs(string namePrefs, string data)
+    public static void SaveStringPrefs(string namePrefs, string data)
     {
         PlayerPrefs.SetString(namePrefs, data);
     }
@@ -56,10 +56,11 @@ public class Saver : MonoBehaviour
 
     private void InitPlayrPrefs()
     {
-        if (!PlayerPrefs.HasKey("Coins")) SaverIntPrefs("Coins", 0);
-        if (!PlayerPrefs.HasKey("HighScore")) SaverIntPrefs("HighScore", 0);
-        if (!PlayerPrefs.HasKey("LastScore")) SaverIntPrefs("Coins", 0);
-        if (!PlayerPrefs.HasKey("MuteSound")) SaverStringPrefs("MuteSound", "false");
-        if (!PlayerPrefs.HasKey("MuteVibrate")) SaverStringPrefs("MuteVibrate", "false");
+        if (!PlayerPrefs.HasKey("Coins")) SaveIntPrefs("Coins", 0);
+        if (!PlayerPrefs.HasKey("HighScore")) SaveIntPrefs("HighScore", 0);
+        if (!PlayerPrefs.HasKey("LastScore")) SaveIntPrefs("Coins", 0);
+        if (!PlayerPrefs.HasKey("MuteSound")) SaveStringPrefs("MuteSound", "false");
+        if (!PlayerPrefs.HasKey("MuteVibrate")) SaveStringPrefs("MuteVibrate", "false");
+        if (!PlayerPrefs.HasKey("CurrentSkin")) SaveIntPrefs("CurrentSkin", 0);
     }
 }

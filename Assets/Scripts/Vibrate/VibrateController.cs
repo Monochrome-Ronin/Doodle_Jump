@@ -13,6 +13,6 @@ public class VibrateController
         bool mute = false;
         if (Saver.GetStringPrefs("MuteVibrate") == "True") mute = false;
         else if (Saver.GetStringPrefs("MuteVibrate") == "False") mute = true;
-        Saver.SaverStringPrefs("MuteVibrate", mute.ToString());
+        Saver.SaveStringPrefs("MuteVibrate", mute.ToString());
     }
 }

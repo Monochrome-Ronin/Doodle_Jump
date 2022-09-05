@@ -13,7 +13,7 @@ public class AudioController : MonoBehaviour
         bool mute = false;
         if (Saver.GetStringPrefs("MuteSound") == "True") mute = false;
         else if (Saver.GetStringPrefs("MuteSound") == "False") mute = true;
-        Saver.SaverStringPrefs("MuteSound", mute.ToString());
+        Saver.SaveStringPrefs("MuteSound", mute.ToString());
     }
     public void PlaySound(AudioClip clip)
     {

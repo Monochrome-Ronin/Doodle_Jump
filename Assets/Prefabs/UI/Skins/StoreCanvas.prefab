@@ -375,6 +375,16 @@ MonoBehaviour:
   - {fileID: 6584838717817496709}
   - {fileID: 6584838719657536162}
   - {fileID: 6584838718144719947}
+  _buy: {fileID: 1265967756599928599}
+  _costSkin: {fileID: 1771057589749596624}
+  _nameSkin: {fileID: 1771057589517560777}
+  _buyOrPlay: {fileID: 1265967756551653528}
+  _players:
+  - {fileID: 1665483052894481338}
+  - {fileID: 1173887266348202283}
+  - {fileID: 1173887266123495180}
+  - {fileID: 1173887266423632357}
+  _coinsDisplay: {fileID: 6644089082198153426}
 --- !u!1 &6644089084141428786
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6852228318832651099, guid: 327ca53effa3be747accaa0deceb265d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.2999878
+      value: 0.29992676
       objectReference: {fileID: 0}
     - target: {fileID: 6852228318832651099, guid: 327ca53effa3be747accaa0deceb265d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1016,9 +1026,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6644089082225266730}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinCost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinName
+      value: Doodle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _simplePlatform
       value: 
       objectReference: {fileID: 6644089084220061204}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _storeController
+      value: 
+      objectReference: {fileID: 6852228318669105614}
     - target: {fileID: 6430808904319444988, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1357,9 +1379,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6584838717947956380}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinCost
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinName
+      value: Pink Bunny
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _simplePlatform
       value: 
       objectReference: {fileID: 6584838719657536162}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _storeController
+      value: 
+      objectReference: {fileID: 6852228318669105614}
     - target: {fileID: 6430808904319444988, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2077,9 +2115,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6584838719787369147}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinCost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinName
+      value: Bunny
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _simplePlatform
       value: 
       objectReference: {fileID: 6584838717817496709}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _storeController
+      value: 
+      objectReference: {fileID: 6852228318669105614}
     - target: {fileID: 6430808904319444988, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2414,9 +2468,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6584838719326063221}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinCost
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _skinName
+      value: Hat
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _simplePlatform
       value: 
       objectReference: {fileID: 6584838718144719947}
+    - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _storeController
+      value: 
+      objectReference: {fileID: 6852228318669105614}
     - target: {fileID: 6430808904319444988, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2617,6 +2687,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
+--- !u!114 &1265967756551653528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5659229977674939115, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
+  m_PrefabInstance: {fileID: 6852228318361711219}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1265967756599928599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5659229977765139812, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
+  m_PrefabInstance: {fileID: 6852228318361711219}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1771057589517560777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5155511235443579322, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
+  m_PrefabInstance: {fileID: 6852228318361711219}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1771057589749596624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5155511235207934883, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}
+  m_PrefabInstance: {fileID: 6852228318361711219}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1771057591191124561 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5155511234978039842, guid: 2c704228a2d76f14eaf506ec27d6d99f, type: 3}

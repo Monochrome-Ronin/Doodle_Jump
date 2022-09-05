@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &59723637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6865183950863743403, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+  m_PrefabInstance: {fileID: 757375569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3306cbac0307e3c4bb894586e0134eb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &91961250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1385,69 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &757375569
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743400, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743401, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: m_Name
+      value: Skins Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865183950863743403, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1778786075}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f363298f13e0af4dbc891a607b3c186, type: 3}
 --- !u!1 &768697811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,6 +2873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06694bb908032143a2d3c37630f6baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1778786075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 528751004073143380, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+  m_PrefabInstance: {fileID: 1778786070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41985ac9901c73142a314e66eb243163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781968466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +2985,8 @@ MonoBehaviour:
   - {fileID: 348118354}
   _coinsTXT: {fileID: 263736720}
   _simplePlatform: {fileID: 1778786073}
+  _storeController: {fileID: 6852228318669105610}
+  _skinPlayerManager: {fileID: 59723637}
 --- !u!114 &1850046663 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1544384682936438912, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
@@ -3660,3 +3747,14 @@ CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 6644089084064721625, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
   m_PrefabInstance: {fileID: 6852228318669105608}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6852228318669105610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6852228318669105614, guid: 6e5735445bee5ae4eb07c866e38820c0, type: 3}
+  m_PrefabInstance: {fileID: 6852228318669105608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187a5cfd7c002fd4999a6b4ee79c40c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -16,7 +16,7 @@ public class CollectCoin : Boost
         if (collider2D.TryGetComponent(out Player player))
         {
             AudioController.Instance.PlaySound(_clipCoin);
-            Saver.SaverIntPrefs("Coins", Saver.GetIntPrefs("Coins") + 1);
+            Saver.SaveIntPrefs("Coins", Saver.GetIntPrefs("Coins") + 1);
             Destroy(gameObject, 0.1f);
         }
     }
