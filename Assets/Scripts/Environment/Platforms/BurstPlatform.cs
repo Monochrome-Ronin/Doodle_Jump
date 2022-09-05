@@ -5,6 +5,7 @@ using UnityEngine;
 public class BurstPlatform : Environments
 {
     [SerializeField] private AudioClip _clipJump;
+    [SerializeField] private AudioClip _clipExplosion;
     [SerializeField] private float _jumpForce = 6.5f;
     [SerializeField] private bool _isJump = true;
     [SerializeField] private Sprite[] _sprites;
@@ -47,7 +48,8 @@ public class BurstPlatform : Environments
         _spriteIndex += 1;
         if(_spriteIndex > 3)
         {
-            Destroy(transform.gameObject);
+            AudioController.Instance.PlaySound(_clipExplosion);
+            Destroy(transform.gameObject, 0.1f);
         }
         else
             Invoke("ChangeSprite", _animSpeed);
