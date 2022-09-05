@@ -1529,38 +1529,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7374439305318644540, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305318644540, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305318644540, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305318644540, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7374439307277670153, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_Name
       value: UICanvas
