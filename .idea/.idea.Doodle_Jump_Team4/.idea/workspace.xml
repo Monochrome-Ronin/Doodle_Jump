@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Boosts/Spring.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Boosts/Spring.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/BurstPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/BurstPlatform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/MovingPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/MovingPlatform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/WeakPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/WeakPlatform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/BurstPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/BurstPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/Destroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/Destroy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Texturers/Bust/Propeller.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Texturers/Bust/Propeller.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Texturers/Game/Gametiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Texturers/Game/Gametiles.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
