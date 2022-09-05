@@ -12,6 +12,7 @@ public class GameOver : MonoBehaviour
     public IEnumerator Fall()
     {
         AudioController.Instance.PlaySound(_clipFall);
+        VibrateController.Vibrate();
         _gameUIController.GameOver();
         _player.GetComponent<BoxCollider2D>().enabled = false;
         _cameraController.PlayerFall = true;

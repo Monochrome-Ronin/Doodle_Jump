@@ -12,8 +12,10 @@ public class GameUIController : MonoBehaviour
     [SerializeField] private Button[] _menu;
     [SerializeField] private Button _replay;
     [SerializeField] private GameObject FonPause;
-    [SerializeField] private Button _audioncontroll;
+    [SerializeField] private Button _audionControll;
+    [SerializeField] private Button _vibrateControll;
     [SerializeField] private Text[] _audioDisplay;
+    [SerializeField] private Text[] _vibrateDisplay;
     [SerializeField] private Text[] _scoreDisplay;
 
     public void GameOver()
@@ -29,8 +31,10 @@ public class GameUIController : MonoBehaviour
         _menu[0].onClick.AddListener(GoMenu);
         _menu[1].onClick.AddListener(GoMenu);
         _replay.onClick.AddListener(RePlay);
-        _audioncontroll.onClick.AddListener(AudioControll);
-        DisplayAudio();
+        _vibrateControll.onClick.AddListener(VibrateControll);
+        _audionControll.onClick.AddListener(AudioControll);
+        DisplayInfo("MuteSound", _audioDisplay);
+        DisplayInfo("MuteVibrate", _vibrateDisplay);
     }
     private void RePlay()
     {
@@ -59,20 +63,26 @@ public class GameUIController : MonoBehaviour
     {
         AudioController.Instance.PlayButtons();
         AudioController.MuteSound();
-        DisplayAudio();
+        DisplayInfo("MuteSound", _audioDisplay);
+    }
+    private void VibrateControll()
+    {
+        AudioController.Instance.PlayButtons();
+        VibrateController.MuteVibrate();
+        DisplayInfo("MuteVibrate", _vibrateDisplay);
     }
 
-    private void DisplayAudio()
+    private void DisplayInfo(string namePrefs, Text[] text)
     {
-        if (Saver.GetStringPrefs("MuteSound") == "False")
+        if (Saver.GetStringPrefs(namePrefs) == "False")
         {
-            _audioDisplay[0].color = new Color(0.2f, 0.2f, 0.2f, 0.5f);
-            _audioDisplay[1].color = new Color(0.03f, 0.6f, 0f, 1f);
+            text[0].color = new Color(0.2f, 0.2f, 0.2f, 0.5f);
+            text[1].color = new Color(0.03f, 0.6f, 0f, 1f);
         }
-        if (Saver.GetStringPrefs("MuteSound") == "True")
+        if (Saver.GetStringPrefs(namePrefs) == "True")
         {
-            _audioDisplay[1].color = new Color(0.2f, 0.2f, 0.2f, 0.5f);
-            _audioDisplay[0].color = new Color(0.03f, 0.6f, 0f, 1f);
+            text[1].color = new Color(0.2f, 0.2f, 0.2f, 0.5f);
+            text[0].color = new Color(0.03f, 0.6f, 0f, 1f);
         }
     }
 }
