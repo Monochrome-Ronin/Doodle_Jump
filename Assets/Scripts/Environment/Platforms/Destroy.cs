@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    [SerializeField] private CameraController _camera;
+    [SerializeField] private GameOver _gameOver;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out Environments environments))
@@ -15,9 +15,7 @@ public class Destroy : MonoBehaviour
 
         else if (collision.TryGetComponent(out Player player))
         {
-            _camera._playerFall = true;
-        }
-        
-          
+            StartCoroutine(_gameOver.Fall());
+        }       
     }
 }
