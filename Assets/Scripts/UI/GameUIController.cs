@@ -9,18 +9,33 @@ public class GameUIController : MonoBehaviour
 {
     [SerializeField] private Button _pause;
     [SerializeField] private Button _resume;
-    [SerializeField] private Button _menu;
+    [SerializeField] private Button[] _menu;
+    [SerializeField] private Button _replay;
     [SerializeField] private GameObject FonPause;
     [SerializeField] private Button _audioncontroll;
     [SerializeField] private Text[] _audioDisplay;
+    [SerializeField] private Text[] _scoreDisplay;
 
+    public void GameOver()
+    {
+        _pause.interactable = false;
+        _scoreDisplay[0].text = "high score: " + Saver.GetIntPrefs("HighScore").ToString();
+        _scoreDisplay[1].text = "last score: " + Saver.GetIntPrefs("LastScore").ToString();
+    }
     private void Start()
     {
         _pause.onClick.AddListener(Pause);
         _resume.onClick.AddListener(Resume);
-        _menu.onClick.AddListener(GoMenu);
+        _menu[0].onClick.AddListener(GoMenu);
+        _menu[1].onClick.AddListener(GoMenu);
+        _replay.onClick.AddListener(RePlay);
         _audioncontroll.onClick.AddListener(AudioControll);
         DisplayAudio();
+    }
+    private void RePlay()
+    {
+        AudioController.Instance.PlayButtons();
+        SceneManager.LoadScene("GameScene");
     }
     private void GoMenu()
     {
