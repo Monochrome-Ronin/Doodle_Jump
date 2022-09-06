@@ -46,5 +46,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pause: {fileID: 0}
   _resume: {fileID: 0}
-  _menu: {fileID: 0}
+  _menu:
+  - {fileID: 0}
+  - {fileID: 0}
+  _replay: {fileID: 0}
   FonPause: {fileID: 0}
+  _audionControll: {fileID: 0}
+  _vibrateControll: {fileID: 0}
+  _continueGame: {fileID: 0}
+  _audioDisplay:
+  - {fileID: 0}
+  - {fileID: 0}
+  _vibrateDisplay:
+  - {fileID: 0}
+  - {fileID: 0}
+  _scoreDisplay:
+  - {fileID: 0}
+  - {fileID: 0}
+  _coinsDisplay:
+  - {fileID: 0}
+  - {fileID: 0}
+  _gameOver: {fileID: 0}
+  _startAudio: {fileID: 8300000, guid: 11cb0705b0b1c304d966d5320bd14153, type: 3}

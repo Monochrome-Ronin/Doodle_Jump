@@ -47,5 +47,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _cameraController: {fileID: 0}
   _gameOver: {fileID: 0}
-  _clipFall: {fileID: 8300000, guid: 206eba86ed154324cb12de6f924ac07e, type: 3}
+  _gameOverAudio:
+  - {fileID: 8300000, guid: 206eba86ed154324cb12de6f924ac07e, type: 3}
+  - {fileID: 8300000, guid: 5b0cef7e3df5bb144bca0db5d3c3e8af, type: 3}
   _gameUIController: {fileID: 0}

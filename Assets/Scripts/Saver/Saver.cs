@@ -59,8 +59,8 @@ public class Saver : MonoBehaviour
         if (!PlayerPrefs.HasKey("Coins")) SaveIntPrefs("Coins", 0);
         if (!PlayerPrefs.HasKey("HighScore")) SaveIntPrefs("HighScore", 0);
         if (!PlayerPrefs.HasKey("LastScore")) SaveIntPrefs("Coins", 0);
-        if (!PlayerPrefs.HasKey("MuteSound")) SaveStringPrefs("MuteSound", "false");
-        if (!PlayerPrefs.HasKey("MuteVibrate")) SaveStringPrefs("MuteVibrate", "false");
+        if (!PlayerPrefs.HasKey("MuteSound")) SaveStringPrefs("MuteSound", "False");
+        if (!PlayerPrefs.HasKey("MuteVibrate")) SaveStringPrefs("MuteVibrate", "False");
         if (!PlayerPrefs.HasKey("CurrentSkin")) SaveIntPrefs("CurrentSkin", 0);
     }
 }

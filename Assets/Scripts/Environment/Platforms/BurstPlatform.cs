@@ -48,7 +48,7 @@ public class BurstPlatform : Environments
         _spriteIndex += 1;
         if(_spriteIndex > 3)
         {
-            AudioController.Instance.PlaySound(_clipExplosion);
+            //AudioController.Instance.PlaySound(_clipExplosion);
             Destroy(transform.gameObject, 0.1f);
         }
         else

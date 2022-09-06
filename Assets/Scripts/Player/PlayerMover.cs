@@ -24,6 +24,8 @@ public class PlayerMover : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _idleSprite;
+        else _playerImage.sprite = _idleSprite;
     }
     private void Update()
     {
