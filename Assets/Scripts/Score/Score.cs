@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     private Player _player;
     private int _score;
 
-    public int score { get => _score; set => _score = value; }
+    public int score { get => _score; }
 
     private void Start()
     {
