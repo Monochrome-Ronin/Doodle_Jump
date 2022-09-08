@@ -17,19 +17,12 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private Image _playerImage;
     private Rigidbody2D _rigidbody2D;
     private float _horizontalDirectory;
-    private bool _isPhone;
 
     public Sprite JumpSprite { get => _jumpSprite; set => _jumpSprite = value; }
     public Sprite IdleSprite { get => _idleSprite; set => _idleSprite = value; }
 
     private void Start()
     {
-#if UNITY_ANDROID_API
-        _isPhone = true;
-#endif
-#if UNITY_EDITOR
-        _isPhone = false;
-#endif
         _rigidbody2D = GetComponent<Rigidbody2D>();
         if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _idleSprite;
         else _playerImage.sprite = _idleSprite;
@@ -42,8 +35,8 @@ public class PlayerMover : MonoBehaviour
     private void FixedUpdate()
     {
         if (_isMover == false) return;
-        if (_isPhone) _horizontalDirectory = Input.acceleration.x;
-        else if (!_isPhone) _horizontalDirectory = Input.GetAxis("Horizontal");
+        if (Application.platform == RuntimePlatform.Android) _horizontalDirectory = Input.acceleration.x;
+        else if (Application.isEditor) _horizontalDirectory = Input.GetAxis("Horizontal");
         MoveHorizontal();
     }
     private void MoveHorizontal()
