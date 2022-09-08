@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
     [SerializeField] private Text _scoreText;
     [SerializeField] private float _scoreZeroPosition;
     private Player _player;
-    private int _score;
+    public int score;
     private void Start()
     {
         _player = FindObjectOfType<Player>();
@@ -15,12 +15,13 @@ public class Score : MonoBehaviour
     private void Update()
     {
         int score = (int)(_scoreZeroPosition +  _player.transform.position.y * 10);
-        if (score > _score)
+        if (score > this.score)
         {
-            _score = score;
-            Saver.SaveIntPrefs("LastScore", _score);
-            if (_score > Saver.GetIntPrefs("HighScore")) Saver.SaveIntPrefs("HighScore", _score);
-            _scoreText.text = _score.ToString();
+            this.score = score;
+            Saver.SaveIntPrefs("LastScore", this.score);
+            if (this.score > Saver.GetIntPrefs("HighScore")) Saver.SaveIntPrefs("HighScore", this.score);
+            _scoreText.text = this.score.ToString();
         }
     }
+
 }

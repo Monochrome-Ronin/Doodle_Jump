@@ -12,13 +12,27 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Boost[] _boosts;
     [SerializeField] private int _chanceOfSpawnBoost = 2;
     [SerializeField] private Transform _topBound;
-    [SerializeField] Environments _lastPlatform;
+    [SerializeField] private Environments _lastPlatform;
+    [SerializeField] private Score _score;
+    [SerializeField] private int[] _scoresToSpawnPlatform;
+
+    private bool[] _canPlatformSpawn;
+
+    private void Awake()
+    {
+        _canPlatformSpawn = new bool[_environments.Length];
+    }
     private void FixedUpdate()
     {
         if (_lastPlatform.transform.position.y < _topBound.position.y)
         {
             SpawnPlatform();
             SpawnBoost();
+        }
+        for(int i = 0; i < _environments.Length; i++)
+        {
+            if (_scoresToSpawnPlatform[i] < _score.score)
+                _canPlatformSpawn[i] = true;
         }
     }
 
@@ -69,7 +83,7 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < _environments.Length; i++)
         {
             randomArr[i] = Random.Range(0, _chanceOfEnviroments[i] + 1);
-            if (maxValue < randomArr[i])
+            if (maxValue < randomArr[i] && _canPlatformSpawn[i])
             {
                 maxValue = randomArr[i];
                 currentPlatform = i;
