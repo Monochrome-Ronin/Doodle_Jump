@@ -6,28 +6,18 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMover : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     [SerializeField] bool _isMover = true;
     [SerializeField] private float _speed = 7.5f;
     [SerializeField] private float _jumpAnimTime = .2f;
-    [Header("Sprite")]
-    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
-    [SerializeField] private Sprite _jumpSprite;
-    [SerializeField] private Sprite _idleSprite;
-    [Header("Image")]
-    [SerializeField] private Image _playerImage;
     private Rigidbody2D _rigidbody2D;
     private float _horizontalDirectory;
     private Boost _currentBoost;
-
-    public Sprite JumpSprite { get => _jumpSprite; set => _jumpSprite = value; }
-    public Sprite IdleSprite { get => _idleSprite; set => _idleSprite = value; }
     public Boost CurrentBoost { get => _currentBoost; set => _currentBoost = value; }
 
     private void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _idleSprite;
-        else _playerImage.sprite = _idleSprite;
+        _rigidbody2D = GetComponent<Rigidbody2D>();       
     }
     private void Update()
     {
@@ -43,10 +33,10 @@ public class PlayerMover : MonoBehaviour
     }
     private void MoveHorizontal()
     {
-        if (_horizontalDirectory < 0 && _playerSpriteRenderer != null)
-            _playerSpriteRenderer.flipX = true;
-        else if (_horizontalDirectory > 0 && _playerSpriteRenderer != null)
-            _playerSpriteRenderer.flipX = false;
+        if (_horizontalDirectory < 0 && _player.PlayerSpriteRenderer != null)
+            _player.PlayerSpriteRenderer.flipX = true;
+        else if (_horizontalDirectory > 0 && _player.PlayerSpriteRenderer != null)
+            _player.PlayerSpriteRenderer.flipX = false;
         _rigidbody2D.velocity = new Vector3(_horizontalDirectory * _speed, _rigidbody2D.velocity.y, 0);
     }
     private void ControllHorizontalPostion()
@@ -54,15 +44,10 @@ public class PlayerMover : MonoBehaviour
         if (transform.position.x < -3) transform.position = new Vector3(2.7f, transform.position.y, -1);
         else if (transform.position.x > 3) transform.position = new Vector3(-2.7f, transform.position.y, -1);
     }
-    public void JumpAnim()
+    public IEnumerator JumpAnim()
     {
-        if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _jumpSprite;
-        else _playerImage.sprite = _jumpSprite;
-        Invoke("SetSpriteback", _jumpAnimTime);
-    }
-    private void SetSpriteback()
-    {
-        if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _idleSprite;
-        else _playerImage.sprite = _idleSprite;
+        _player.JumpAnim();
+        yield return new WaitForSeconds(_jumpAnimTime);
+        _player.IdelAnim();
     }
 }

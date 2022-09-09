@@ -7,4 +7,6 @@ public class PlayerSkin : ScriptableObject
 {
     public Sprite IdelSprite;
     public Sprite JumpSprite;
+    public Sprite ShotSprite;
+    public Sprite ShotSpriteJump;
 }

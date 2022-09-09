@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdelSprite: {fileID: 21300000, guid: ff0f9d3040802524d9487c4daa92e692, type: 3}
   JumpSprite: {fileID: 21300000, guid: 92ffc84cc2d287941920ba3948cb8d2c, type: 3}
+  ShotSprite: {fileID: 21300000, guid: bf84031ab11543941a077370285cfcd8, type: 3}
+  ShotSpriteJump: {fileID: 21300000, guid: 677a17dc933ac534fa24432c567d8358, type: 3}
