@@ -7,7 +7,7 @@ public class AudioController : MonoBehaviour
 {
     public static AudioController Instance;
     
-    [SerializeField] private AudioSource _effectsSource, _buttonsSource;
+    [SerializeField] private AudioSource _effectsSource, _buttonsSource, _enemySource;
     public static void MuteSound()
     {
         bool mute = false;
@@ -25,6 +25,12 @@ public class AudioController : MonoBehaviour
     {
         if (Saver.GetStringPrefs("MuteSound") == "True") return;
         _buttonsSource.Play();
+    }
+
+    public void EnemySound()
+    {
+        if (Saver.GetStringPrefs("MuteSound") == "True") return;
+        _enemySource.Play();
     }
     private void Awake()
     {

@@ -2724,6 +2724,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gametiles_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 547
+        width: 87
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed308c750dd56a94da5d4baf49702174
+      internalID: 840981891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gametiles_23
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 547
+        width: 87
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73216af60cf42d34e828b55078848946
+      internalID: -361199094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2738,7 +2780,7 @@ TextureImporter:
       Gametiles_94: 891216452
       Gametiles_9: 409052052
       Gametiles_121: -1181758384
-      WeakPlatform2: 825008462
+      Gametiles_108: -694258835
       Gametiles_112: -49442572
       Gametiles_44: -1011509081
       Gametiles_109: -536499032
@@ -2805,6 +2847,7 @@ TextureImporter:
       Gametiles_40: -688310262
       Gametiles_53: -66946870
       Gametiles_59: 437215497
+      Gametiles_18: 840981891
       Gametiles_128: 2025570663
       Gametiles_3: 442723750
       Gametiles_48: 2019791779
@@ -2823,6 +2866,7 @@ TextureImporter:
       Gametiles_115: 1002243413
       Gametiles_79: -781243147
       Gametiles_82: 1900314506
+      Gametiles_23: -361199094
       BurstPlatform5: 1329741697
       Gametiles_42: -153839440
       Gametiles_29: 2012429785
@@ -2867,7 +2911,7 @@ TextureImporter:
       Gametiles_34: 1302328482
       Gametiles_30: -1261165365
       Gametiles_43: -976454911
-      Gametiles_108: -694258835
+      WeakPlatform2: 825008462
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
