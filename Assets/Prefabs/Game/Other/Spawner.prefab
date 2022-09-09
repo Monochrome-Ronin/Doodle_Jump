@@ -57,3 +57,5 @@ MonoBehaviour:
   _chanceOfSpawnBoost: 2
   _topBound: {fileID: 0}
   _lastPlatform: {fileID: 0}
+  _score: {fileID: 0}
+  _scoresToSpawnPlatform: 00000000000000000000000000000000

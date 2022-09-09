@@ -782,6 +782,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d228f6a03872c74a8194d29ffcfd37a, type: 3}
+--- !u!114 &1049010357892049675 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1049010357973058801, guid: 0d228f6a03872c74a8194d29ffcfd37a, type: 3}
+  m_PrefabInstance: {fileID: 1049010357892049674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d0124b23e072a4eb02240371af7b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1921146009547789693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1602,7 +1613,11 @@ PrefabInstance:
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
       propertyPath: _score
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 830075678}
+=======
+      objectReference: {fileID: 1049010357892049675}
+>>>>>>> 0b7cf582fcd88ddc6240c3bc8ab6d245affcdd38
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
       propertyPath: _topBound
       value: 
@@ -1612,14 +1627,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 610304113}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+<<<<<<< HEAD
       propertyPath: _boosts.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+=======
+>>>>>>> 0b7cf582fcd88ddc6240c3bc8ab6d245affcdd38
       propertyPath: _chanceOfSpawnBoost
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+<<<<<<< HEAD
       propertyPath: _boosts.Array.data[2]
       value: 
       objectReference: {fileID: 3469601023277048643, guid: 8f809600f553eec4bb8a9aa5784fb352, type: 3}
@@ -1649,11 +1668,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
       propertyPath: _chanceOfBoosts.Array.data[3]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
       propertyPath: _chanceOfBoosts.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+      propertyPath: _scoresToSpawnPlatform.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+      propertyPath: _chanceOfEnviroments.Array.data[1]
       value: 2
+=======
+      propertyPath: _chanceOfBoosts.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
+      propertyPath: _chanceOfBoosts.Array.data[1]
+      value: 7
+>>>>>>> 0b7cf582fcd88ddc6240c3bc8ab6d245affcdd38
       objectReference: {fileID: 0}
     - target: {fileID: 5429672337380723397, guid: 9b8a9b8205452494dadb1c2e3ddc6e90, type: 3}
       propertyPath: _scoresToSpawnPlatform.Array.data[1]

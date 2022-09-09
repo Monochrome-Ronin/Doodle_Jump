@@ -37,12 +37,8 @@ public class PlayerMover : MonoBehaviour
     private void FixedUpdate()
     {
         if (_isMover == false) return;
-#if UNITY_ANDROID_API
-        _horizontalDirectory = Input.acceleration.x;
-#endif
-#if UNITY_EDITOR
-        _horizontalDirectory = Input.GetAxis("Horizontal");
-#endif
+        if (Application.platform == RuntimePlatform.Android) _horizontalDirectory = Input.acceleration.x;
+        else if (Application.isEditor) _horizontalDirectory = Input.GetAxis("Horizontal");
         MoveHorizontal();
     }
     private void MoveHorizontal()
@@ -51,12 +47,12 @@ public class PlayerMover : MonoBehaviour
             _playerSpriteRenderer.flipX = true;
         else if (_horizontalDirectory > 0 && _playerSpriteRenderer != null)
             _playerSpriteRenderer.flipX = false;
-        _rigidbody2D.velocity = new Vector2(_horizontalDirectory * _speed, _rigidbody2D.velocity.y);
+        _rigidbody2D.velocity = new Vector3(_horizontalDirectory * _speed, _rigidbody2D.velocity.y, 0);
     }
     private void ControllHorizontalPostion()
     {
-        if (transform.position.x < -3) transform.position = new Vector2(2.7f, transform.position.y);
-        else if (transform.position.x > 3) transform.position = new Vector2(-2.7f, transform.position.y);
+        if (transform.position.x < -3) transform.position = new Vector3(2.7f, transform.position.y, -1);
+        else if (transform.position.x > 3) transform.position = new Vector3(-2.7f, transform.position.y, -1);
     }
     public void JumpAnim()
     {
