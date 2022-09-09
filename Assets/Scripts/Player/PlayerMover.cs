@@ -17,9 +17,11 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private Image _playerImage;
     private Rigidbody2D _rigidbody2D;
     private float _horizontalDirectory;
+    private Boost _currentBoost;
 
     public Sprite JumpSprite { get => _jumpSprite; set => _jumpSprite = value; }
     public Sprite IdleSprite { get => _idleSprite; set => _idleSprite = value; }
+    public Boost CurrentBoost { get => _currentBoost; set => _currentBoost = value; }
 
     private void Start()
     {

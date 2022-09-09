@@ -68,6 +68,10 @@ public class Spawner : MonoBehaviour
                 offset = new Vector3(0, .2f);
             else if(boost.CompareTag("Coin"))
                 offset = new Vector3(0, .5f);
+            else if (boost.CompareTag("Jetpack"))
+                offset = new Vector3(0, .5f);
+            else if (boost.CompareTag("Hat"))
+                offset = new Vector3(0, .4f);
             if (_lastPlatform.transform.GetComponent<SpriteRenderer>().sprite.name == "Gametiles_0")
             {
                 Instantiate(boost, _lastPlatform.transform.position + offset + new Vector3(Random.Range(-0.25f, 0.25f), 0, 0), Quaternion.identity);

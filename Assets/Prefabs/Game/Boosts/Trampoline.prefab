@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 520276960149906769}
   - component: {fileID: 3969526539234487466}
   - component: {fileID: -70851978328767200}
-  - component: {fileID: -8094411906510924421}
+  - component: {fileID: 3469601023277048643}
   m_Layer: 0
-  m_Name: Spring
+  m_Name: Trampoline
   m_TagString: Spring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1821694515, guid: 02b371efe13f1044fb20d992abe20611, type: 3}
+  m_Sprite: {fileID: 1946632248, guid: 02b371efe13f1044fb20d992abe20611, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34, y: 0.22}
+    oldSize: {x: 0.71, y: 0.27}
     newSize: {x: 0.34, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3434019, y: 0.22510171}
   m_EdgeRadius: 0
---- !u!114 &-8094411906510924421
+--- !u!114 &3469601023277048643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,9 +121,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3193949150648710048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d5a7047f00387478e75dd1cc2bf80a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d87d2ef9f9d4fd448274e4a33585938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clipSpring: {fileID: 8300000, guid: 621e1a1e6e1224f45bc2287278e887ef, type: 3}
-  _jumpForce: 13
-  _activeSpring: {fileID: -1673354658, guid: 02b371efe13f1044fb20d992abe20611, type: 3}
+  _clipSpring: {fileID: 8300000, guid: 5b0cef7e3df5bb144bca0db5d3c3e8af, type: 3}
+  _jumpForce: 15
+  _activeSpring: {fileID: 180535955, guid: 02b371efe13f1044fb20d992abe20611, type: 3}

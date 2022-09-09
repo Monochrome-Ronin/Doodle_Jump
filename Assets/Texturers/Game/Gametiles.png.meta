@@ -168,7 +168,7 @@ TextureImporter:
         serializedVersion: 2
         x: 126
         y: 840
-        width: 342
+        width: 157
         height: 184
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -187,10 +187,10 @@ TextureImporter:
       name: Gametiles_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 786
-        width: 378
-        height: 238
+        x: 465
+        y: 796
+        width: 136
+        height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,10 +880,10 @@ TextureImporter:
       name: Gametiles_45
       rect:
         serializedVersion: 2
-        x: 282
-        y: 399
-        width: 186
-        height: 218
+        x: 323
+        y: 518
+        width: 60
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1447,8 +1447,8 @@ TextureImporter:
       name: Gametiles_73
       rect:
         serializedVersion: 2
-        x: 474
-        y: 468
+        x: 487
+        y: 469
         width: 18
         height: 24
       alignment: 0
@@ -1489,8 +1489,8 @@ TextureImporter:
       name: Gametiles_76
       rect:
         serializedVersion: 2
-        x: 448
-        y: 420
+        x: 501
+        y: 415
         width: 74
         height: 48
       alignment: 0
@@ -1531,8 +1531,8 @@ TextureImporter:
       name: Gametiles_78
       rect:
         serializedVersion: 2
-        x: 492
-        y: 438
+        x: 524
+        y: 435
         width: 24
         height: 6
       alignment: 0
@@ -1574,7 +1574,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 314
-        y: 330
+        y: 304
         width: 124
         height: 99
       alignment: 0
@@ -2724,6 +2724,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Trampoline2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 799
+        width: 71
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a8d577085352f4e8780793fe56969e
+      internalID: 180535955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trampoline1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 799
+        width: 71
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2483c791b1ca21745818cea1092b6155
+      internalID: 1946632248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jetpack
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 422
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e922c51a8a84454099ea4f76d9fe593
+      internalID: 706666696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2738,6 +2801,7 @@ TextureImporter:
       Gametiles_94: 891216452
       Gametiles_9: 409052052
       Gametiles_121: -1181758384
+      Trampoline1: 1946632248
       WeakPlatform2: 825008462
       Gametiles_112: -49442572
       Gametiles_44: -1011509081
@@ -2796,9 +2860,11 @@ TextureImporter:
       Gametiles_50: -1681149712
       Gametiles_95: -420764159
       Gametiles_106: -158052507
+      Trampoline2: 180535955
       Gametiles_54: 921275290
       Gametiles_114: 344906599
       WeakPlatform4: 1897978732
+      Jetpack: 706666696
       Gametiles_113: -38254417
       Gametiles_8: 1396940501
       Gametiles_57: -1409931019
