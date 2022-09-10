@@ -296,6 +296,10 @@ PrefabInstance:
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 858493019664561863, guid: 4e2fecb430373b543a0ecf50b8b3ebc5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 858493020261772688, guid: 4e2fecb430373b543a0ecf50b8b3ebc5, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -495,7 +499,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 2
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

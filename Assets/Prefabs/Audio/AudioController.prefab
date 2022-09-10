@@ -171,7 +171,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -304,4 +304,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectsSource: {fileID: 858493019664561863}
   _buttonsSource: {fileID: 858493019551123313}
-  _enemySource: {fileID: 0}

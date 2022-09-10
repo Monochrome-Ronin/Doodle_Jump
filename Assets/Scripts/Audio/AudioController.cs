@@ -21,13 +21,12 @@ public class AudioController : MonoBehaviour
     }
     public void Play()
     {
-        _effectsSource.Play();
+        _effectsSource.UnPause();
     }
     public void PlaySound(AudioClip clip)
     {
         if (Saver.GetStringPrefs("MuteSound") == "True") return;
         _effectsSource.PlayOneShot(clip);
-        _effectsSource.clip = clip;
     }
 
     public void PlayButtons()

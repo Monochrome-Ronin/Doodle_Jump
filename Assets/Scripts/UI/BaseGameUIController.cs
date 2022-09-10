@@ -57,8 +57,8 @@ public class BaseGameUIController : MonoBehaviour
         _vibrateControll.onClick.AddListener(VibrateControll);
         _audionControll.onClick.AddListener(AudioControll);
         _continueGame.onClick.AddListener(ContinueGame);
-        DisplayOptionsInfo("MuteSound", _audioDisplay);
         DisplayOptionsInfo("MuteVibrate", _vibrateDisplay);
+        DisplayOptionsInfo("MuteSound", _audioDisplay);
     }
 
     private void GoMenu()

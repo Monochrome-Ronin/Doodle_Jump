@@ -829,6 +829,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 528751005316352612, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
     - target: {fileID: 528751005697884244, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_Name
       value: Skin
@@ -1213,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 528751005316352612, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
     - target: {fileID: 528751005697884244, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_Name
       value: Skin Pink Bunny
@@ -1965,6 +1973,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 528751005316352612, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
     - target: {fileID: 528751005697884244, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_Name
       value: Skin Bunny
@@ -2345,6 +2357,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 528751005316352612, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
+      propertyPath: _clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
     - target: {fileID: 528751005697884244, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: m_Name
       value: Skin Hat
