@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BurstPlatform : Environments
 {
-    [SerializeField] private AudioClip _clipJump;
     [SerializeField] private AudioClip _clipExplosion;
     [SerializeField] private float _jumpForce = 6.5f;
     [SerializeField] private bool _isJump = true;
@@ -15,10 +14,9 @@ public class BurstPlatform : Environments
 
     public bool IsJump { get => _isJump; }
 
-    public override void JumpPlatform(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce)
     {
-        AudioController.Instance.PlaySound(_clipJump);
-        base.JumpPlatform(player, jumpForce);      
+        base.Jump(player, jumpForce);      
     }
     public void SetJump()
     {
@@ -30,7 +28,7 @@ public class BurstPlatform : Environments
         {
             float offset = collision.transform.localPosition.y - transform.localPosition.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            JumpPlatform(player, _jumpForce);
+            Jump(player, _jumpForce);
         }
     }
 

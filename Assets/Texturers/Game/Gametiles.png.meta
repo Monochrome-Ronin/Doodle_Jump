@@ -2775,7 +2775,7 @@ TextureImporter:
         width: 48
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2783,6 +2783,27 @@ TextureImporter:
       bones: []
       spriteID: 4e922c51a8a84454099ea4f76d9fe593
       internalID: 706666696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gametiles_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 552
+        width: 84
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2388c7500dc020c4f9615cd9aca0432b
+      internalID: -1092826909
       vertices: []
       indices: 
       edges: []
@@ -2802,7 +2823,7 @@ TextureImporter:
       Gametiles_9: 409052052
       Gametiles_121: -1181758384
       Trampoline1: 1946632248
-      WeakPlatform2: 825008462
+      Gametiles_108: -694258835
       Gametiles_112: -49442572
       Gametiles_44: -1011509081
       Gametiles_109: -536499032
@@ -2871,6 +2892,7 @@ TextureImporter:
       Gametiles_40: -688310262
       Gametiles_53: -66946870
       Gametiles_59: 437215497
+      Gametiles_18: -1092826909
       Gametiles_128: 2025570663
       Gametiles_3: 442723750
       Gametiles_48: 2019791779
@@ -2933,7 +2955,7 @@ TextureImporter:
       Gametiles_34: 1302328482
       Gametiles_30: -1261165365
       Gametiles_43: -976454911
-      Gametiles_108: -694258835
+      WeakPlatform2: 825008462
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

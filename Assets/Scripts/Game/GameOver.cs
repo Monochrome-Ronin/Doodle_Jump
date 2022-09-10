@@ -26,6 +26,7 @@ public class GameOver : MonoBehaviour
             _player.transform.position = new Vector3(_player.transform.position.x, _player.transform.position.y, -1);
             yield return new WaitForSeconds(0.5f);
             _playerCollider.enabled = true;
+            _player.SetLayer("Player");
         }       
     }
     public IEnumerator Fall()

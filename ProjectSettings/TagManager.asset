@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platmor
+  - Spring
+  - Coin
+  - Jetpack
+  - Hat
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - UI
   - Player
   - Platform
-  - 
+  - GameOver
   - 
   - 
   - 

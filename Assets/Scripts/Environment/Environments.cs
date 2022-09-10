@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Environments : MonoBehaviour
 {
+    [SerializeField] protected AudioClip _clip;
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -12,8 +13,9 @@ public abstract class Environments : MonoBehaviour
     {
         
     }
-    public virtual void JumpPlatform(Player player, float jumpForce)
+    public virtual void Jump(Player player, float jumpForce)
     {
+        AudioController.Instance.PlaySound(_clip);
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
         rigidbody2D.velocity = new Vector3(rigidbody2D.velocity.x, 0, 0);
         rigidbody2D.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
