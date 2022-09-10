@@ -1,0 +1,46 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Player : MonoBehaviour
+{
+    [SerializeField] private Sprite _idleSprite;
+    [SerializeField] private Sprite _jumpSprite;
+    [SerializeField] private Sprite _shotSprite;
+    [SerializeField] private Sprite _shotSpriteJump;
+    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
+    [SerializeField] private Image _playerImage;
+    private bool _isShoot = false;
+    public bool IsShoot { get => _isShoot; set => _isShoot = value; }
+    public SpriteRenderer PlayerSpriteRenderer { get => _playerSpriteRenderer; }
+    public Image PlayerImage { get => _playerImage; }
+    public void SetSprites(PlayerSkin playerSkin)
+    {
+        _idleSprite = playerSkin.IdelSprite;
+        _jumpSprite = playerSkin.JumpSprite;
+        _shotSprite = playerSkin.ShotSprite;
+        _shotSpriteJump = playerSkin.ShotSpriteJump;
+    }
+    public void JumpAnim()
+    {
+        if (_playerSpriteRenderer != null && _isShoot == false) _playerSpriteRenderer.sprite = _jumpSprite;
+        else if (_playerSpriteRenderer != null && _isShoot) _playerSpriteRenderer.sprite = _shotSpriteJump;
+        else if (_playerImage != null && _isShoot == false) _playerImage.sprite = _jumpSprite;
+        else if (_playerImage != null && _isShoot) _playerImage.sprite = _shotSpriteJump;
+    }
+    public void IdelAnim()
+    {
+        if (_playerSpriteRenderer != null && _isShoot == false) _playerSpriteRenderer.sprite = _idleSprite;
+        else if (_playerSpriteRenderer != null && _isShoot) _playerSpriteRenderer.sprite = _shotSprite;
+        else if (_playerImage != null && _isShoot == false) _playerImage.sprite = _idleSprite;
+        else if (_playerImage != null && _isShoot) _playerImage.sprite = _shotSprite;
+    }
+    public void SootAnim()
+    {
+        if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _shotSprite;
+        else if (_playerImage != null) _playerImage.sprite = _shotSprite;
+    }
+    private void Start()
+    {
+        IdelAnim();
+    }
+}

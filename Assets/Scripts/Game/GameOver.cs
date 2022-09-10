@@ -9,12 +9,12 @@ public class GameOver : MonoBehaviour
     [SerializeField] CameraController _cameraController;
     [SerializeField] private CanvasGroup _gameOver;
     [SerializeField] private AudioClip[] _gameOverAudio;
-    [SerializeField] private GameUIController _gameUIController;
+    [SerializeField] private BaseGameUIController _gameUIController;
     private BoxCollider2D _playerCollider;
     private Rigidbody2D _playerRigidbody;
-    public IEnumerator Continue()
+    public IEnumerator Continue(int cost)
     {
-        int costContinue = Mathf.Clamp(2 * (Saver.GetIntPrefs("LastScore") / 100), 10, 99);
+        int costContinue = Mathf.Clamp(2 * cost, 10, 99);
         if (Saver.GetIntPrefs("Coins") >= costContinue)
         {
             _gameUIController.ControllPausebutton(true);

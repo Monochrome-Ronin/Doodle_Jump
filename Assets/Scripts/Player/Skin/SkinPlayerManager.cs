@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SkinPlayerManager : MonoBehaviour
 {
-    [SerializeField] private PlayerMover _player;
+    [SerializeField] private Player _player;
     [SerializeField] private PlayerSkin[] _playerSkins;
     private void Start()
     {
@@ -14,7 +14,6 @@ public class SkinPlayerManager : MonoBehaviour
 
     public void SetSkin()
     {
-        _player.IdleSprite = _playerSkins[Saver.GetIntPrefs("CurrentSkin")].IdelSprite;
-        _player.JumpSprite = _playerSkins[Saver.GetIntPrefs("CurrentSkin")].JumpSprite;
+        _player.SetSprites(_playerSkins[Saver.GetIntPrefs("CurrentSkin")]);
     }
 }

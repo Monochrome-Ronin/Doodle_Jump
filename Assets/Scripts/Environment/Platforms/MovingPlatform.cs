@@ -14,13 +14,10 @@ public class MovingPlatform : Environments
 
     public bool IsJump { get => _isJump; }
 
-    public void Jump(Player player, float jumpForce)
+    public override void JumpPlatform(Player player, float jumpForce)
     {
         AudioController.Instance.PlaySound(_clipJump);
-        Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
-        rigidbody2D.velocity = new Vector3(rigidbody2D.velocity.x, 0, 0);
-        rigidbody2D.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-        player.GetComponent<PlayerMover>().JumpAnim();
+        base.JumpPlatform(player, jumpForce);
     }
     public void SetJump()
     {
@@ -32,7 +29,7 @@ public class MovingPlatform : Environments
         {
             float offset = collision.transform.localPosition.y - transform.localPosition.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            Jump(player, _jumpForce);
+            JumpPlatform(player, _jumpForce);
         }
     }
 
