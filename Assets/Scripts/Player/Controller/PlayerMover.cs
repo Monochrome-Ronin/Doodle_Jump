@@ -33,9 +33,9 @@ public class PlayerMover : MonoBehaviour
     }
     private void MoveHorizontal()
     {
-        if (_horizontalDirectory < 0 && _player.PlayerSpriteRenderer != null)
+        if (_horizontalDirectory < 0 && _player.PlayerSpriteRenderer != null && !_player.IsShoot)
             _player.PlayerSpriteRenderer.flipX = true;
-        else if (_horizontalDirectory > 0 && _player.PlayerSpriteRenderer != null)
+        else if (_horizontalDirectory > 0 && _player.PlayerSpriteRenderer != null && !_player.IsShoot)
             _player.PlayerSpriteRenderer.flipX = false;
         _rigidbody2D.velocity = new Vector3(_horizontalDirectory * _speed, _rigidbody2D.velocity.y, 0);
     }
