@@ -8,7 +8,10 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float _speed = 8;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.TryGetComponent(out Enemies enemies))
+        {
+            Destroy(enemies.gameObject);
+        }
     }
     private void Start()
     {
