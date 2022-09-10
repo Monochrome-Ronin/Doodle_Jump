@@ -15,10 +15,19 @@ public class AudioController : MonoBehaviour
         else if (Saver.GetStringPrefs("MuteSound") == "False") mute = true;
         Saver.SaveStringPrefs("MuteSound", mute.ToString());
     }
+    public void Pause()
+    {
+        _effectsSource.Pause();
+    }
+    public void Play()
+    {
+        _effectsSource.Play();
+    }
     public void PlaySound(AudioClip clip)
     {
         if (Saver.GetStringPrefs("MuteSound") == "True") return;
         _effectsSource.PlayOneShot(clip);
+        _effectsSource.clip = clip;
     }
 
     public void PlayButtons()

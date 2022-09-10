@@ -70,12 +70,15 @@ public class BaseGameUIController : MonoBehaviour
     private void Pause()
     {
         AudioController.Instance.PlayButtons();
+        AudioController.Instance.Pause();
         FonPause.SetActive(true);
         Time.timeScale = 0;
+
     }
     private void Resume()
     {
         AudioController.Instance.PlayButtons();
+        AudioController.Instance.Play();
         FonPause.SetActive(false);
         Time.timeScale = 1;
     }
