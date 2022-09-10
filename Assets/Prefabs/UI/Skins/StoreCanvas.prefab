@@ -1427,7 +1427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinCost
-      value: 200
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinName
@@ -2179,7 +2179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinCost
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinName
@@ -2559,7 +2559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinCost
-      value: 300
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5512115596282222538, guid: 52d8d2739d6b02548867fb83b7dd7c74, type: 3}
       propertyPath: _skinName

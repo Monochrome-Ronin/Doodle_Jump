@@ -62,6 +62,6 @@ public class Saver : MonoBehaviour
         if (!PlayerPrefs.HasKey("MuteSound")) SaveStringPrefs("MuteSound", "False");
         if (!PlayerPrefs.HasKey("MuteVibrate")) SaveStringPrefs("MuteVibrate", "False");
         if (!PlayerPrefs.HasKey("CurrentSkin")) SaveIntPrefs("CurrentSkin", 0);
-        if (!PlayerPrefs.HasKey("CurrentLevel")) SaveIntPrefs("CurrentLevel", 0);
+        if (!PlayerPrefs.HasKey("CurrentLevel")) SaveIntPrefs("CurrentLevel", 1);
     }
 }
