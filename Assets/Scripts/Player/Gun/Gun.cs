@@ -27,9 +27,10 @@ public class Gun : MonoBehaviour
         _gunRender.color = new Color(1, 1, 1, 1);
         Vector3 diff = _camera.ScreenToWorldPoint(positionShoot) - transform.position;
         diff.Normalize();
+        if (diff.x < 0) diff.y = Mathf.Abs(diff.y);
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         rot_z -= 90;
-        transform.rotation = Quaternion.Euler(0f, 0f, rot_z);
+        transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Clamp(rot_z, -45, 45));
         Instantiate(_bullet, _bulletDir.position, transform.rotation);     
         yield return new WaitForSeconds(0.5f);
         _gunRender.color = new Color(1, 1, 1, 0);

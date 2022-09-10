@@ -1741,10 +1741,10 @@ TextureImporter:
       name: Gametiles_93
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 0
-        width: 664
-        height: 402
+        x: 1159
+        y: 4
+        width: 639
+        height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
