@@ -26,7 +26,7 @@ public class PlayerUI : MonoBehaviour
     {
         if (_simplePlatform.IsJump && _player.GetComponent<Rigidbody2D>().velocity == Vector2.zero)
         {
-            _simplePlatform.JumpPlatform(_player, _jumpForce);
+            _simplePlatform.Jump(_player, _jumpForce);
         }
     }
 }

@@ -2787,6 +2787,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gametiles_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 552
+        width: 84
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2388c7500dc020c4f9615cd9aca0432b
+      internalID: -1092826909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2871,6 +2892,7 @@ TextureImporter:
       Gametiles_40: -688310262
       Gametiles_53: -66946870
       Gametiles_59: 437215497
+      Gametiles_18: -1092826909
       Gametiles_128: 2025570663
       Gametiles_3: 442723750
       Gametiles_48: 2019791779

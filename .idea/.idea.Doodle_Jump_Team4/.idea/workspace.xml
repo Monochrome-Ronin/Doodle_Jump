@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_40__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_49_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_09_2022_15_49__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Merge_at_01_09_2022_15_50_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Merge_at_01_09_2022_15_50__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2022_15_47_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_Update_at_01_09_2022_15_47__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="4c2b74c3-814e-46b7-89ba-895fe5f6520b" name="Changes" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doodle_Jump_Team4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/AudioController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/AudioController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Enemies/Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Enemies/Enemy.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Other/Span Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Other/Span Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/GameCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/GameOverCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/GameOverCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/UICanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Game/UICanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/BurstPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/BurstPlatform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/MovingPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/MovingPlatform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Platforms/Platform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/MoveEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/MoveEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Environments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Environments.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/BurstPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/BurstPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/MovingPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platforms/SimplePlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameOver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Controller/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Controller/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Skin/PlayerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Skin/PlayerUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Texturers/Game/Gametiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Texturers/Game/Gametiles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/paske/Homework/Doodle_Jump_Team4/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/EnemyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MoveEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -106,6 +112,7 @@
       <workItem from="1662285599741" duration="2453000" />
       <workItem from="1662368444523" duration="5070000" />
       <workItem from="1662704679980" duration="3825000" />
+      <workItem from="1662810159158" duration="10492000" />
     </task>
     <task id="LOCAL-00001" summary="Add coin, spawn coin, collect coin">
       <created>1661958798331</created>
@@ -114,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661958798331</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge">
+      <created>1662810698704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662810698704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add coin, spawn coin, collect coin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add coin, spawn coin, collect coin" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>

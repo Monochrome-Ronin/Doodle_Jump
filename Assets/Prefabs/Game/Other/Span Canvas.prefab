@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 4295955341077918339}
   - component: {fileID: 4295955341077918338}
   - component: {fileID: 4295955341077918337}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Destoy '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

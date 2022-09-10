@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class MovingPlatform : Environments
 {
-    [SerializeField] private AudioClip _clipJump;
     [SerializeField] private float _jumpForce = 8f;
     [SerializeField] private bool _isJump = true;
     [SerializeField] private float _speed = 0.5f;
@@ -14,10 +13,9 @@ public class MovingPlatform : Environments
 
     public bool IsJump { get => _isJump; }
 
-    public override void JumpPlatform(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce)
     {
-        AudioController.Instance.PlaySound(_clipJump);
-        base.JumpPlatform(player, jumpForce);
+        base.Jump(player, jumpForce);
     }
     public void SetJump()
     {
@@ -29,7 +27,7 @@ public class MovingPlatform : Environments
         {
             float offset = collision.transform.localPosition.y - transform.localPosition.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            JumpPlatform(player, _jumpForce);
+            Jump(player, _jumpForce);
         }
     }
 

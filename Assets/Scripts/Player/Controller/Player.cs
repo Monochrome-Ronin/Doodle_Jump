@@ -10,7 +10,9 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer _playerSpriteRenderer;
     [SerializeField] private Image _playerImage;
     private bool _isShoot = false;
+    private Rigidbody2D _playerRB;
     public bool IsShoot { get => _isShoot; set => _isShoot = value; }
+    public Rigidbody2D PlayerRigidbody2D { get => _playerRB; }
     public SpriteRenderer PlayerSpriteRenderer { get => _playerSpriteRenderer; }
     public Image PlayerImage { get => _playerImage; }
     public void SetSprites(PlayerSkin playerSkin)
@@ -39,8 +41,13 @@ public class Player : MonoBehaviour
         if (_playerSpriteRenderer != null) _playerSpriteRenderer.sprite = _shotSprite;
         else if (_playerImage != null) _playerImage.sprite = _shotSprite;
     }
+    public void SetLayer(string layer)
+    {
+        gameObject.layer = LayerMask.NameToLayer(layer);
+    }
     private void Start()
     {
+        _playerRB = GetComponent<Rigidbody2D>();
         IdelAnim();
     }
 }

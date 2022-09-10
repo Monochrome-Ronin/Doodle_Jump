@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78089c476a7b54641ac7c56b624b32e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clipJump: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
+  _clip: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
   _jumpForce: 8
   _isJump: 1
   _speed: 1
