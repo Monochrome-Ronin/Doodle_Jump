@@ -27,9 +27,7 @@ public class Gun : MonoBehaviour
         _gunRender.color = new Color(1, 1, 1, 1);
         Vector3 diff = _camera.ScreenToWorldPoint(positionShoot) - transform.position;
         diff.Normalize();
-        Debug.Log("first " + diff);
         if (diff.x < 0) diff.y = Mathf.Abs(diff.y);
-        Debug.Log("second " + diff);
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         rot_z -= 90;
         transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Clamp(rot_z, -45, 45));
