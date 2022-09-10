@@ -53,9 +53,7 @@ public class Spawner : MonoBehaviour
             spawnPostion.x = 0;
         }
 
-        _lastPlatform = Instantiate(RandomSpawnPlatform(), spawnPostion, Quaternion.identity);
-        
-        
+        _lastPlatform = Instantiate(RandomSpawnPlatform(), spawnPostion, Quaternion.identity);      
     }
 
     private void SpawnBoost()

@@ -12,16 +12,6 @@ public class Hat : Boost
     bool _jump = true;
     bool _sound = false;
     private Vector3 _hatOffset = new Vector3(0, .4f, 0);
-    protected override void OnTriggerEnter2D(Collider2D collider2D)
-    {
-        if (collider2D.gameObject.TryGetComponent(out Player player))
-        {
-            Boost boost = player.GetComponent<PlayerMover>().CurrentBoost;
-            if (boost != null && boost != transform.gameObject.GetComponent<Boost>()) return;
-            Jump(player, _jumpForce);
-            player.GetComponent<PlayerMover>().CurrentBoost = transform.gameObject.GetComponent<Boost>();
-        }
-    }
     public void Jump(Player player, float jumpForce)
     {
         if (!_sound)
@@ -36,28 +26,24 @@ public class Hat : Boost
         StartCoroutine("HatAnim");
         Invoke("Destroy", 2);
     }
-
+    protected override void OnTriggerEnter2D(Collider2D collider2D)
+    {
+        if (collider2D.gameObject.TryGetComponent(out Player player))
+        {
+            Boost boost = player.GetComponent<PlayerMover>().CurrentBoost;
+            if (boost != null && boost != transform.gameObject.GetComponent<Boost>()) return;
+            Jump(player, _jumpForce);
+            player.GetComponent<PlayerMover>().CurrentBoost = transform.gameObject.GetComponent<Boost>();
+        }
+    }
     private void Update()
     {
         if (_player != null && _jump)
         {
-            transform.position = _player.transform.position + _hatOffset;
+            transform.position = _player.transform.position + _hatOffset + Vector3.back * 3;
         }
-        /*if (_player != null)
-        {
-            if (_player.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX)
-            {
-                _hatOffset.x = .0f;
-                transform.GetComponent<SpriteRenderer>().flipX = false;
-            }
-            else
-            {
-                _hatOffset.x = -.0f;
-                transform.GetComponent<SpriteRenderer>().flipX = true;
-            }
-        }*/
     }
-    IEnumerator HatAnim()
+    private IEnumerator HatAnim()
     {
         for (int i = 0; i < _activeSprites.Length; i++)
         {
