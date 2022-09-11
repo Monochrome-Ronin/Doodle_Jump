@@ -1940,10 +1940,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343808, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_Name
-      value: Passed procent
-      objectReference: {fileID: 0}
     - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1959,10 +1955,6 @@ PrefabInstance:
     - target: {fileID: 7374439305847343809, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374439305847343814, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_Text
-      value: 'Level: 10, 76%'
       objectReference: {fileID: 0}
     - target: {fileID: 7374439307277670153, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_Name
@@ -2151,6 +2143,10 @@ PrefabInstance:
     - target: {fileID: 8191005377744964190, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191005377744964191, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+      propertyPath: _speed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

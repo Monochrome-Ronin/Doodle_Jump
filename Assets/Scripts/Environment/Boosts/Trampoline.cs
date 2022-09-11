@@ -15,16 +15,12 @@ public class Trampoline : Boost
         {
             float offset = collider2D.transform.localPosition.y - transform.localPosition.y;
             if (player.transform.GetComponent<Rigidbody2D>().velocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            Jump(player, _jumpForce);
+            Jump(player, _jumpForce, 0.5f);
         }
     }
-    public void Jump(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce, float jumpAnim = 0.2f)
     {
-        AudioController.Instance.PlaySound(_clipSpring);
-        Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
-        rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
-        rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        player.GetComponent<PlayerMover>().JumpAnim();
+        base.Jump(player, jumpForce, jumpAnim);
         transform.GetComponent<SpriteRenderer>().sprite = _activeSpring;
         transform.position += new Vector3(0, .1f, 0);
         player.transform.DORotate(new Vector3(0, 0, 360), 1, RotateMode.FastBeyond360) ;

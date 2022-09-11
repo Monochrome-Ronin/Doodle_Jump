@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Enemies : Environments
 {
-    [SerializeField] private AudioClip _clipEnemy;
-    [SerializeField] private AudioClip _clipDead;
     [SerializeField] private float _jumpForce = 8f;
     [SerializeField] private Vector2 _contactOffset = new Vector2(0.5f, 1f);    
     
-    public override void Jump(Player player, float jumpForce) => base.Jump(player, jumpForce);
+    public override void Jump(Player player, float jumpForce, float jumpAnim = 0.2f) => base.Jump(player, jumpForce, jumpAnim);
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Player player))
@@ -18,8 +16,7 @@ public class Enemies : Environments
             Vector2 offset = new Vector2(collision.transform.localPosition.x - transform.localPosition.x, collision.transform.localPosition.y - transform.localPosition.y);
             if (collision.relativeVelocity.y < 0 || (Mathf.Abs(offset.y) > _contactOffset.y && Mathf.Abs(offset.x) < _contactOffset.x))
             {
-                Jump(player, _jumpForce);
-                AudioController.Instance.PlaySound(_clipEnemy);
+                Jump(player, _jumpForce, -1f);
                 Destroy(gameObject);
             }
             else
@@ -31,6 +28,6 @@ public class Enemies : Environments
     }
     private void OnDestroy()
     {
-        AudioController.Instance.PlaySound(_clipDead);
+        AudioController.Instance.PlaySound(_clip);
     }
 }

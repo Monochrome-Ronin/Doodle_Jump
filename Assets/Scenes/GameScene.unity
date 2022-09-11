@@ -1493,16 +1493,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4295955341016446692, guid: 4e77447817744b5439a026a4b724c331, type: 3}
       propertyPath: m_Name
-      value: Span Canvas
+      value: Spanw Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 4295955341016446695, guid: 4e77447817744b5439a026a4b724c331, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 4295955341077918336, guid: 4e77447817744b5439a026a4b724c331, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -54.999756
-      objectReference: {fileID: 0}
     - target: {fileID: 4295955341077918337, guid: 4e77447817744b5439a026a4b724c331, type: 3}
       propertyPath: _gameOver
       value: 
@@ -1886,10 +1882,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7374439306112853190, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.85009766
-      objectReference: {fileID: 0}
     - target: {fileID: 7374439307277670153, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_Name
       value: UICanvas
@@ -1898,10 +1890,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 7374439307277670156, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7374439307277670157, guid: 95c83fef4db91ee40bbabfc5054b92c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2081,6 +2069,10 @@ PrefabInstance:
     - target: {fileID: 8191005377744964190, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191005377744964191, guid: fab074794aaedfd4b9fc6e9ce3bda880, type: 3}
+      propertyPath: _speed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

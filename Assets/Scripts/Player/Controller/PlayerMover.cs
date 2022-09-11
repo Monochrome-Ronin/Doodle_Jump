@@ -9,7 +9,6 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] bool _isMover = true;
     [SerializeField] private float _speed = 7.5f;
-    [SerializeField] private float _jumpAnimTime = .2f;
     private Rigidbody2D _rigidbody2D;
     private float _horizontalDirectory;
     private Boost _currentBoost;
@@ -27,8 +26,8 @@ public class PlayerMover : MonoBehaviour
     private void FixedUpdate()
     {
         if (_isMover == false) return;
-        if (Application.platform == RuntimePlatform.Android) _horizontalDirectory = Input.acceleration.x;
         else if (Application.isEditor) _horizontalDirectory = Input.GetAxis("Horizontal");
+        else _horizontalDirectory = Input.acceleration.x;
         MoveHorizontal();
     }
     private void MoveHorizontal()
@@ -43,11 +42,5 @@ public class PlayerMover : MonoBehaviour
     {
         if (transform.position.x < -3) transform.position = new Vector3(2.7f, transform.position.y, -1);
         else if (transform.position.x > 3) transform.position = new Vector3(-2.7f, transform.position.y, -1);
-    }
-    public IEnumerator JumpAnim()
-    {
-        _player.JumpAnim();
-        yield return new WaitForSeconds(_jumpAnimTime);
-        _player.IdelAnim();
-    }
+    }   
 }

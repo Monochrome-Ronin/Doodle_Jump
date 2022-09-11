@@ -13,12 +13,12 @@ public abstract class Environments : MonoBehaviour
     {
         
     }
-    public virtual void Jump(Player player, float jumpForce)
+    public virtual void Jump(Player player, float jumpForce, float jumpAnim = 0.2f)
     {
         AudioController.Instance.PlaySound(_clip);
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
         rigidbody2D.velocity = new Vector3(rigidbody2D.velocity.x, 0, 0);
         rigidbody2D.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-        StartCoroutine(player.GetComponent<PlayerMover>().JumpAnim());
+        if (jumpAnim >= 0) StartCoroutine(player.FullJumpAnim(jumpAnim));
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,12 @@ public class Player : MonoBehaviour
     public Rigidbody2D PlayerRigidbody2D { get => _playerRB; }
     public SpriteRenderer PlayerSpriteRenderer { get => _playerSpriteRenderer; }
     public Image PlayerImage { get => _playerImage; }
+    public IEnumerator FullJumpAnim(float jumpAnimTime = 0.2f)
+    {
+        JumpAnim();
+        yield return new WaitForSeconds(jumpAnimTime);
+        IdelAnim();
+    }
     public void SetSprites(PlayerSkin playerSkin)
     {
         _idleSprite = playerSkin.IdelSprite;

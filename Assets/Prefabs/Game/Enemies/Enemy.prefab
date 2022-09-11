@@ -213,9 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f960c474e0320f4c9d7f835e386044e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 83c76b6d19635804fbf709fec186a782, type: 3}
-  _clipEnemy: {fileID: 8300000, guid: eb5fc2dd35ac13a479fcd566f3558a09, type: 3}
-  _clipDead: {fileID: 8300000, guid: 4f645bfb54b506d4da6068690d91a697, type: 3}
+  _clip: {fileID: 8300000, guid: 4f645bfb54b506d4da6068690d91a697, type: 3}
   _jumpForce: 8
   _contactOffset: {x: 0.5, y: 1}
 --- !u!114 &3279499129092756014

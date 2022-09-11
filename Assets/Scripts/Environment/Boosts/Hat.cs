@@ -5,18 +5,17 @@ using DG.Tweening;
 
 public class Hat : Boost
 {
-    [SerializeField] private AudioClip _clipSpring;
     [SerializeField] private float _jumpForce = 20f;
     [SerializeField] private Sprite[] _activeSprites;
     Player _player;
     bool _jump = true;
     bool _sound = false;
     private Vector3 _hatOffset = new Vector3(0, .4f, 0);
-    public void Jump(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce, float jumpAnim)
     {
         if (!_sound)
         {
-            AudioController.Instance.PlaySound(_clipSpring);
+            AudioController.Instance.PlaySound(_clip);
             _sound = true;
         }
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
@@ -32,7 +31,7 @@ public class Hat : Boost
         {
             Boost boost = player.GetComponent<PlayerMover>().CurrentBoost;
             if (boost != null && boost != transform.gameObject.GetComponent<Boost>()) return;
-            Jump(player, _jumpForce);
+            Jump(player, _jumpForce, 0.5f);
             player.GetComponent<PlayerMover>().CurrentBoost = transform.gameObject.GetComponent<Boost>();
         }
     }

@@ -14,9 +14,9 @@ public class BurstPlatform : Environments
 
     public bool IsJump { get => _isJump; }
 
-    public override void Jump(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce, float jumpAnim = 0.2f)
     {
-        base.Jump(player, jumpForce);      
+        base.Jump(player, jumpForce, jumpAnim);      
     }
     public void SetJump()
     {

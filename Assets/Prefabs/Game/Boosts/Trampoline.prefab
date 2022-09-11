@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d87d2ef9f9d4fd448274e4a33585938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 5b0cef7e3df5bb144bca0db5d3c3e8af, type: 3}
   _clipSpring: {fileID: 8300000, guid: 5b0cef7e3df5bb144bca0db5d3c3e8af, type: 3}
   _jumpForce: 15
   _activeSpring: {fileID: 180535955, guid: 02b371efe13f1044fb20d992abe20611, type: 3}

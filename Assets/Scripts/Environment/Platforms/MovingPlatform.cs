@@ -13,9 +13,9 @@ public class MovingPlatform : Environments
 
     public bool IsJump { get => _isJump; }
 
-    public override void Jump(Player player, float jumpForce)
+    public override void Jump(Player player, float jumpForce, float jumpAnim = 0.2f)
     {
-        base.Jump(player, jumpForce);
+        base.Jump(player, jumpForce, jumpAnim);
     }
     public void SetJump()
     {
@@ -27,7 +27,7 @@ public class MovingPlatform : Environments
         {
             float offset = collision.transform.localPosition.y - transform.localPosition.y;
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
-            Jump(player, _jumpForce);
+            Jump(player, _jumpForce, 0.2f);
         }
     }
 

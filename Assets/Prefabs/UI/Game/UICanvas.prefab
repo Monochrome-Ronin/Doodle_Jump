@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 7374439305847343815}
   - component: {fileID: 7374439305847343814}
   m_Layer: 5
-  m_Name: Score Text
+  m_Name: Passed procent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,9 +389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
-
-'
+  m_Text: 
 --- !u!1 &7374439306112853185
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07137038, y: 0.615}
   m_AnchorMax: {x: 0.675, y: 0.7436042}
-  m_AnchoredPosition: {x: 0.8499756, y: 50.44995}
+  m_AnchoredPosition: {x: 0.85009766, y: 50.44995}
   m_SizeDelta: {x: 1.7099609, y: -92.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7374439306112853188
@@ -888,7 +886,7 @@ RectTransform:
   - {fileID: 7374439305685474215}
   - {fileID: 7374439306120035587}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -906,7 +904,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 8
+  m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -979,15 +977,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.b
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.g
-      value: 0.2
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.r
-      value: 0.2
+      value: 0.03137255
       objectReference: {fileID: 0}
     - target: {fileID: 7372576064020551899, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_RaycastTarget
@@ -1117,15 +1115,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.b
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.g
-      value: 0.2
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7372576063996192030, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_Color.r
-      value: 0.2
+      value: 0.03137255
       objectReference: {fileID: 0}
     - target: {fileID: 7372576064020551899, guid: 61b5e65da0aace64f8bc5639189a9f93, type: 3}
       propertyPath: m_RaycastTarget
