@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Enemies : Environments
 {
@@ -23,7 +22,7 @@ public class Enemies : Environments
             if ((collision.relativeVelocity.y < 0 || (Mathf.Abs(offset.y) > _contactOffset.y && Mathf.Abs(offset.x) < _contactOffset.x)) ||
                 player.GetComponent<PlayerMover>().CurrentBoost != null)
             {
-                Jump(player, _jumpForce, -1f);
+                if (player.GetComponent<PlayerMover>().CurrentBoost == null) Jump(player, _jumpForce, -1f);
                 Dead();
             }
             else
