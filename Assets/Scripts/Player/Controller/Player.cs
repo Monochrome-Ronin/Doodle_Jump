@@ -52,9 +52,10 @@ public class Player : MonoBehaviour
     {
         gameObject.layer = LayerMask.NameToLayer(layer);
     }
-    private void Start()
+    private IEnumerator Start()
     {
         _playerRB = GetComponent<Rigidbody2D>();
+        yield return null;
         IdelAnim();
     }
 }

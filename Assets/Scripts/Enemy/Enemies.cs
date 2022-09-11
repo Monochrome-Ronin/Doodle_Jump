@@ -19,9 +19,10 @@ public class Enemies : Environments
         {
 
             Vector2 offset = new Vector2(collision.transform.localPosition.x - transform.localPosition.x, collision.transform.localPosition.y - transform.localPosition.y);
-            if (collision.relativeVelocity.y < 0 || (Mathf.Abs(offset.y) > _contactOffset.y && Mathf.Abs(offset.x) < _contactOffset.x))
+            if ((collision.relativeVelocity.y < 0 || (Mathf.Abs(offset.y) > _contactOffset.y && Mathf.Abs(offset.x) < _contactOffset.x)) ||
+                player.GetComponent<PlayerMover>().CurrentBoost != null)
             {
-                Jump(player, _jumpForce, -1f);
+                if (player.GetComponent<PlayerMover>().CurrentBoost == null) Jump(player, _jumpForce, -1f);
                 Dead();
             }
             else

@@ -15,19 +15,29 @@ public class Spawner : MonoBehaviour
     [SerializeField] protected Environments _lastPlatform;
     [SerializeField] protected Score _score;
     [SerializeField] protected int[] _scoresToSpawnPlatform;
+    [SerializeField] protected int _scoreForEnemySpawn;
+    [SerializeField][Range(20, 40)] protected int[] _minMaxPlatformForSpawnEnemy;
+    [SerializeField] private Enemies[] _enemies;
 
     protected bool[] _canPlatformSpawn;
 
-    protected void Awake()
+    protected int _currentPlatformForEnemySpawn;
+    private void Awake()
     {
         _canPlatformSpawn = new bool[_environments.Length];
+        _currentPlatformForEnemySpawn = Random.Range(_minMaxPlatformForSpawnEnemy[0], _minMaxPlatformForSpawnEnemy[1]);
     }
     private void FixedUpdate()
     {
         if (_lastPlatform.transform.position.y < _topBound.position.y)
         {
             SpawnPlatform();
-            SpawnBoost();
+            if (_currentPlatformForEnemySpawn <= 0)
+            {
+                SpawnEnemies();
+                _currentPlatformForEnemySpawn = Random.Range(_minMaxPlatformForSpawnEnemy[0], _minMaxPlatformForSpawnEnemy[1]);
+            }
+            else SpawnBoost();
         }
         for(int i = 0; i < _environments.Length; i++)
         {
@@ -37,6 +47,7 @@ public class Spawner : MonoBehaviour
     }
 
     protected void SpawnPlatform()
+
     {
         Vector3 spawnPostion = new Vector3();
         spawnPostion.y = Random.Range(0.5f, 1.3f);
@@ -52,8 +63,8 @@ public class Spawner : MonoBehaviour
             spawnPostion.y = -3.5f;
             spawnPostion.x = 0;
         }
-
         _lastPlatform = Instantiate(RandomSpawnPlatform(), spawnPostion, Quaternion.identity);      
+        if (_score.score > _scoreForEnemySpawn) _currentPlatformForEnemySpawn--;
     }
 
     protected void SpawnBoost()
@@ -110,4 +121,9 @@ public class Spawner : MonoBehaviour
         }
         return _boosts[currentBoost];
     }
+    protected void SpawnEnemies()
+    {
+         Instantiate(_enemies[Random.Range(0, _enemies.Length)], _lastPlatform.transform.position + Vector3.back + Vector3.up * .55f, Quaternion.identity);
+    }
+
 }

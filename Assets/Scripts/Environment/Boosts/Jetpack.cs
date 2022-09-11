@@ -65,8 +65,7 @@ public class Jetpack : Boost
             if (i == _activeSprites.Length - 1)
                 i = 0;
             yield return new WaitForSeconds(0.5f);
-        }
-        
+        }      
     }
 
     private void Destroy()
