@@ -6,28 +6,36 @@ using UnityEngine.Serialization;
 
 public class Spawner : MonoBehaviour
 {
+    [SerializeField] private Transform _topBound;
+    [SerializeField] private Environments _lastPlatform;
     [SerializeField] private int[] _chanceOfEnviroments;
     [SerializeField] private Environments[] _environments;
     [SerializeField] private int[] _chanceOfBoosts;
     [SerializeField] private Boost[] _boosts;
     [SerializeField] private int _chanceOfSpawnBoost = 2;
-    [SerializeField] private Transform _topBound;
-    [SerializeField] private Environments _lastPlatform;
     [SerializeField] private Score _score;
     [SerializeField] private int[] _scoresToSpawnPlatform;
-
+    [SerializeField] private int _scoreForEnemySpawn;
+    [SerializeField][Range(20, 40)] private int[] _minMaxPlatformForSpawnEnemy;
+    [SerializeField] private Enemies[] _enemies;
     private bool[] _canPlatformSpawn;
-
+    private int _currentPlatformForEnemySpawn;
     private void Awake()
     {
         _canPlatformSpawn = new bool[_environments.Length];
+        _currentPlatformForEnemySpawn = Random.Range(_minMaxPlatformForSpawnEnemy[0], _minMaxPlatformForSpawnEnemy[1]);
     }
     private void FixedUpdate()
     {
         if (_lastPlatform.transform.position.y < _topBound.position.y)
         {
             SpawnPlatform();
-            SpawnBoost();
+            if (_currentPlatformForEnemySpawn <= 0)
+            {
+                SpawnEnemies();
+                _currentPlatformForEnemySpawn = Random.Range(_minMaxPlatformForSpawnEnemy[0], _minMaxPlatformForSpawnEnemy[1]);
+            }
+            else SpawnBoost();
         }
         for(int i = 0; i < _environments.Length; i++)
         {
@@ -35,7 +43,6 @@ public class Spawner : MonoBehaviour
                 _canPlatformSpawn[i] = true;
         }
     }
-
     private void SpawnPlatform()
     {
         Vector3 spawnPostion = new Vector3();
@@ -52,10 +59,9 @@ public class Spawner : MonoBehaviour
             spawnPostion.y = -3.5f;
             spawnPostion.x = 0;
         }
-
         _lastPlatform = Instantiate(RandomSpawnPlatform(), spawnPostion, Quaternion.identity);      
+        if (_score.score > _scoreForEnemySpawn) _currentPlatformForEnemySpawn--;
     }
-
     private void SpawnBoost()
     {
         if(Random.Range(0, _chanceOfSpawnBoost) == 1)
@@ -76,8 +82,7 @@ public class Spawner : MonoBehaviour
             }
         }
     }
-
-    Environments RandomSpawnPlatform()
+    private Environments RandomSpawnPlatform()
     {
         int maxValue = 0;
         int currentPlatform = 0;
@@ -93,8 +98,7 @@ public class Spawner : MonoBehaviour
         }
         return _environments[currentPlatform];
     }
-
-    Boost RandomSpawnBoost()
+    private Boost RandomSpawnBoost()
     {
         int maxValue = 0;
         int currentBoost = 0;
@@ -110,4 +114,9 @@ public class Spawner : MonoBehaviour
         }
         return _boosts[currentBoost];
     }
+    private void SpawnEnemies()
+    {
+         Instantiate(_enemies[Random.Range(0, _enemies.Length)], _lastPlatform.transform.position + Vector3.back + Vector3.up * .55f, Quaternion.identity);
+    }
+
 }
