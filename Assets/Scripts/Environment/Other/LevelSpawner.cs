@@ -17,7 +17,12 @@ public class LevelSpawner : Spawner
         if (_lastPlatform.transform.position.y < _topBound.position.y && _score.score < _currentLevel * _scorePerLevel)
         {
             SpawnPlatform();
-            SpawnBoost();
+            if (_currentPlatformForEnemySpawn <= 0)
+            {
+                SpawnEnemies();
+                _currentPlatformForEnemySpawn = Random.Range(_minMaxPlatformForSpawnEnemy[0], _minMaxPlatformForSpawnEnemy[1]);
+            }
+            else SpawnBoost();
         }
         else if(_score.score >= _currentLevel * _scorePerLevel && !_finished)
         {
