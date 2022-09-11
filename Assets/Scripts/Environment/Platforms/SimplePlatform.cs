@@ -7,7 +7,7 @@ public class SimplePlatform : Environments
 {
     [SerializeField] private float _jumpForce = 6.5f;
     [SerializeField] private bool _isJump = true;
-    private float _contactOffsetY = .69f;
+    private float _contactOffsetY = .67f;
 
     public bool IsJump { get => _isJump; }
 
@@ -24,6 +24,7 @@ public class SimplePlatform : Environments
         if (collision.gameObject.TryGetComponent(out Player player) && _isJump)
         {
             float offset = collision.transform.localPosition.y - transform.localPosition.y;
+            print(offset);
             if (collision.relativeVelocity.y > 0 || Mathf.Abs(offset) < _contactOffsetY) return;
             Jump(player, _jumpForce);
         }

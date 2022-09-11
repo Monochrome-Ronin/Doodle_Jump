@@ -6,19 +6,19 @@ using UnityEngine.Serialization;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private int[] _chanceOfEnviroments;
-    [SerializeField] private Environments[] _environments;
-    [SerializeField] private int[] _chanceOfBoosts;
-    [SerializeField] private Boost[] _boosts;
-    [SerializeField] private int _chanceOfSpawnBoost = 2;
-    [SerializeField] private Transform _topBound;
-    [SerializeField] private Environments _lastPlatform;
-    [SerializeField] private Score _score;
-    [SerializeField] private int[] _scoresToSpawnPlatform;
+    [SerializeField] protected int[] _chanceOfEnviroments;
+    [SerializeField] protected Environments[] _environments;
+    [SerializeField] protected int[] _chanceOfBoosts;
+    [SerializeField] protected Boost[] _boosts;
+    [SerializeField] protected int _chanceOfSpawnBoost = 2;
+    [SerializeField] protected Transform _topBound;
+    [SerializeField] protected Environments _lastPlatform;
+    [SerializeField] protected Score _score;
+    [SerializeField] protected int[] _scoresToSpawnPlatform;
 
-    private bool[] _canPlatformSpawn;
+    protected bool[] _canPlatformSpawn;
 
-    private void Awake()
+    protected void Awake()
     {
         _canPlatformSpawn = new bool[_environments.Length];
     }
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void SpawnPlatform()
+    protected void SpawnPlatform()
     {
         Vector3 spawnPostion = new Vector3();
         spawnPostion.y = Random.Range(0.5f, 1.3f);
@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
         _lastPlatform = Instantiate(RandomSpawnPlatform(), spawnPostion, Quaternion.identity);      
     }
 
-    private void SpawnBoost()
+    protected void SpawnBoost()
     {
         if(Random.Range(0, _chanceOfSpawnBoost) == 1)
         {
@@ -77,7 +77,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    Environments RandomSpawnPlatform()
+    protected Environments RandomSpawnPlatform()
     {
         int maxValue = 0;
         int currentPlatform = 0;
@@ -94,7 +94,7 @@ public class Spawner : MonoBehaviour
         return _environments[currentPlatform];
     }
 
-    Boost RandomSpawnBoost()
+    protected Boost RandomSpawnBoost()
     {
         int maxValue = 0;
         int currentBoost = 0;
