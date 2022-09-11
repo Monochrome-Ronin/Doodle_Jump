@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3279499129092756002}
   - component: {fileID: 3279499129092756014}
   - component: {fileID: 3279499129092756015}
+  - component: {fileID: -6103868884601073476}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -126,7 +127,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 4f645bfb54b506d4da6068690d91a697, type: 3}
+  _playerDead: {fileID: 8300000, guid: fb076ce255bdb2440b0f369bbcbeec66, type: 3}
   _jumpForce: 8
   _contactOffset: {x: 0.5, y: 1}
 --- !u!114 &3279499129092756014
@@ -247,3 +249,16 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &-6103868884601073476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279499129092756000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c85ff02e7b049e4eb13d56b40b8ddbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 3279499129092756003}

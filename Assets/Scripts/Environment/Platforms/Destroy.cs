@@ -1,7 +1,3 @@
-using DG.Tweening;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Destroy : MonoBehaviour
@@ -12,7 +8,13 @@ public class Destroy : MonoBehaviour
     {
         if (collision.TryGetComponent(out Environments environments))
         {
-            Destroy(environments.gameObject);
+            if (environments.GetComponent<Enemies>() != null)
+            {
+                environments.GetComponent<SpriteRenderer>().enabled = false;
+                environments.GetComponent<Collider2D>().enabled = false;
+                Destroy(environments.gameObject, 0.7f);
+            }
+            else Destroy(environments.gameObject);
         }
 
         else if (collision.TryGetComponent(out Player player))

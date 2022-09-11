@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7023110297582693146}
   - component: {fileID: 7128485118295211810}
   - component: {fileID: 1129323868}
+  - component: {fileID: 168439280862237526}
   m_Layer: 0
   m_Name: MoveEnemy
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a17b110ba64b2d40b2bbc97770c2e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 0}
+  _clip: {fileID: 8300000, guid: 4f645bfb54b506d4da6068690d91a697, type: 3}
   _enemySpriteRenderer: {fileID: 7875017080032905695}
   _speed: 2
 --- !u!114 &7023110297582693146
@@ -143,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 4f645bfb54b506d4da6068690d91a697, type: 3}
+  _playerDead: {fileID: 8300000, guid: fb076ce255bdb2440b0f369bbcbeec66, type: 3}
   _jumpForce: 8
   _contactOffset: {x: 0.5, y: 1}
 --- !u!82 &7128485118295211810
@@ -166,7 +168,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -260,3 +262,16 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &168439280862237526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875017080032905667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c85ff02e7b049e4eb13d56b40b8ddbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 7128485118295211810}

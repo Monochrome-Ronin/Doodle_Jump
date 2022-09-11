@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Enemies enemies))
         {
-            Destroy(enemies.gameObject);
+            enemies.Dead();
         }
     }
     private void Start()
